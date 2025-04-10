@@ -20,4 +20,8 @@ A company hosts a web application on multiple Amazon EC2 instances. The EC2 inst
 - **On-Demand Instances** provide reliability and are used for the baseline needs.  
 - This mix allows the application to remain cost-efficient and scalable without committing to long-term contracts like Reserved Instances.
 
+### 📚 Reference (Official AWS Documentation):
+- [Auto Scaling Groups with Multiple Instance Types and Purchase Options – AWS Docs](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-mixed-instances-groups.html)
+- [Amazon EC2 Instance Purchasing Options – AWS Docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html)
+
 </details>
