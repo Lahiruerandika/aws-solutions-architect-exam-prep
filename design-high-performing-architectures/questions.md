@@ -12,6 +12,8 @@ A company is designing the network for an online multi-player game. The game use
 **D.** Set up a VPC peering mesh between each Region. Turn on UDP for each VPC.
 
 ---
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
 
 ### ✅ Correct Answer: **B. Set up AWS Global Accelerator with UDP listeners and endpoint groups in each Region.**
 
@@ -38,6 +40,7 @@ AWS **Global Accelerator** is specifically designed for applications that requir
   https://www.examtopics.com/discussions/amazon/view/100130-exam-aws-certified-solutions-architect-associate-saa-c03/  
   https://www.examtopics.com/discussions/amazon/view/100197-exam-aws-certified-solutions-architect-associate-saa-c03/
 
+</details>
 
 ## Question #: 02
 ### Topic #: 2 - Design High-Performing Architectures
@@ -53,6 +56,8 @@ A company hosts a serverless application on AWS. The application uses Amazon API
 **D.** Migrate the database to Amazon DynamoDB with on-demand scaling.
 
 ---
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
 
 ### ✅ Correct Answer: **B. Enable RDS Proxy on the RDS DB instance.**
 
@@ -83,6 +88,8 @@ When using AWS Lambda with Amazon RDS, a common challenge is **managing database
   https://www.examtopics.com/discussions/amazon/view/83199-exam-aws-certified-solutions-architect-associate-saa-c02/
 
 
+</details>
+
 ## Question #: 03
 ### Topic #: 2 - Design High-Performing Architectures
 
@@ -97,6 +104,8 @@ A company has a Java application that uses Amazon Simple Queue Service (Amazon S
 **D.** Store messages that are larger than 256 KB in Amazon Elastic File System (Amazon EFS). Configure Amazon SQS to reference this location in the messages.
 
 ---
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
 
 ### ✅ Correct Answer: **A. Use the Amazon SQS Extended Client Library for Java to host messages that are larger than 256 KB in Amazon S3.**
 
@@ -123,3 +132,5 @@ Amazon SQS has a **hard limit of 256 KB** for message size. If your application 
 - AWS Docs – [Amazon SQS Extended Client Library for Java](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-s3-messages.html)  
 - ExamTopics Discussion:  
   https://www.examtopics.com/discussions/amazon/view/100202-exam-aws-certified-solutions-architect-associate-saa-c03/
+
+</details>
