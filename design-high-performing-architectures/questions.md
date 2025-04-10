@@ -1,4 +1,4 @@
-## Question #: 1
+## Question #: 01
 ### Topic #: 2 - Design High-Performing Architectures
 
 **Question:**  
@@ -39,7 +39,7 @@ AWS **Global Accelerator** is specifically designed for applications that requir
   https://www.examtopics.com/discussions/amazon/view/100197-exam-aws-certified-solutions-architect-associate-saa-c03/
 
 
-## Question #: 2
+## Question #: 02
 ### Topic #: 2 - Design High-Performing Architectures
 
 **Question:**  
@@ -81,3 +81,45 @@ When using AWS Lambda with Amazon RDS, a common challenge is **managing database
 - AWS Docs – [Amazon RDS Proxy](https://docs.aws.amazon.com/rds/latest/UserGuide/rds-proxy.html)  
 - ExamTopics Discussions:  
   https://www.examtopics.com/discussions/amazon/view/83199-exam-aws-certified-solutions-architect-associate-saa-c02/
+
+
+## Question #: 03
+### Topic #: 2 - Design High-Performing Architectures
+
+**Question:**  
+A company has a Java application that uses Amazon Simple Queue Service (Amazon SQS) to parse messages. The application cannot parse messages that are larger than 256 KB in size. The company wants to implement a solution to give the application the ability to parse messages as large as 50 MB.
+
+**Which solution will meet these requirements with the FEWEST changes to the code?**
+
+**A.** Use the Amazon SQS Extended Client Library for Java to host messages that are larger than 256 KB in Amazon S3.  
+**B.** Use Amazon EventBridge to post large messages from the application instead of Amazon SQS.  
+**C.** Change the limit in Amazon SQS to handle messages that are larger than 256 KB.  
+**D.** Store messages that are larger than 256 KB in Amazon Elastic File System (Amazon EFS). Configure Amazon SQS to reference this location in the messages.
+
+---
+
+### ✅ Correct Answer: **A. Use the Amazon SQS Extended Client Library for Java to host messages that are larger than 256 KB in Amazon S3.**
+
+---
+
+### 📘 Explanation:
+
+Amazon SQS has a **hard limit of 256 KB** for message size. If your application needs to send **larger messages (up to 2 GB)**, you must store the message payload **externally** and send a reference to it via SQS.
+
+#### ✅ Why Option A is Correct:
+- AWS provides the **Amazon SQS Extended Client Library for Java**, which seamlessly stores large message payloads in **Amazon S3**, and sends a pointer (reference) through SQS.
+- This **minimizes code changes** and integrates smoothly into existing SQS-based Java applications.
+- Allows messages up to **2 GB** in size (well above the 50 MB needed).
+
+#### 🚫 Why not the others?
+- **B. EventBridge** is not designed for large message payloads (limit is 256 KB as well).
+- **C.** You **cannot change the 256 KB limit** on SQS — it’s a hard service limit.
+- **D.** Amazon SQS cannot directly reference Amazon EFS files in its message body — this would require **custom logic** and **significant code changes**.
+
+---
+
+### 🔗 References:
+
+- AWS Docs – [Amazon SQS Extended Client Library for Java](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-s3-messages.html)  
+- ExamTopics Discussion:  
+  https://www.examtopics.com/discussions/amazon/view/100202-exam-aws-certified-solutions-architect-associate-saa-c03/
