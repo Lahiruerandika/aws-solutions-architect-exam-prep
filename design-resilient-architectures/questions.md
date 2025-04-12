@@ -14,9 +14,8 @@ A solutions architect needs to implement a solution that migrates the data to Am
 **D.** Amazon S3 File Gateway
 
 ---
-
-> 🔘 **Check Answer**
-
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
 ---
 
 ### ✅ Correct Answer: **D. Amazon S3 File Gateway**
@@ -48,3 +47,5 @@ A solutions architect needs to implement a solution that migrates the data to Am
 - AWS Docs – [Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-gateway.html)  
 - ExamTopics Discussion:  
   https://www.examtopics.com/discussions/amazon/view/100220-exam-aws-certified-solutions-architect-associate-saa-c03/
+
+</details>
