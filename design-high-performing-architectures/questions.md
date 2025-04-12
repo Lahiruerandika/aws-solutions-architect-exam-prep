@@ -134,3 +134,52 @@ Amazon SQS has a **hard limit of 256 KB** for message size. If your application 
   https://www.examtopics.com/discussions/amazon/view/100202-exam-aws-certified-solutions-architect-associate-saa-c03/
 
 </details>
+
+## Question #: 04
+### Topic #: 2 - Design High-Performing Architectures
+
+**Question:**  
+A transaction processing company has weekly scripted batch jobs that run on Amazon EC2 instances. The EC2 instances are in an Auto Scaling group. The number of transactions can vary, but the baseline CPU utilization that is noted on each run is at least 60%. The company needs to provision the capacity 30 minutes before the jobs run.
+
+Currently, engineers complete this task by manually modifying the Auto Scaling group parameters. The company does not have the resources to analyze the required capacity trends for the Auto Scaling group counts. The company needs an automated way to modify the Auto Scaling group’s desired capacity.
+
+**Which solution will meet these requirements with the LEAST operational overhead?**
+
+**A.** Create a dynamic scaling policy for the Auto Scaling group. Configure the policy to scale based on the CPU utilization metric. Set the target value for the metric to 60%.  
+**B.** Create a scheduled scaling policy for the Auto Scaling group. Set the appropriate desired capacity, minimum capacity, and maximum capacity. Set the recurrence to weekly. Set the start time to 30 minutes before the batch jobs run.  
+**C.** Create a predictive scaling policy for the Auto Scaling group. Configure the policy to scale based on forecast. Set the scaling metric to CPU utilization. Set the target value for the metric to 60%. In the policy, set the instances to pre-launch 30 minutes before the jobs run.  
+**D.** Create an Amazon EventBridge event to invoke an AWS Lambda function when the CPU utilization metric value for the Auto Scaling group reaches 60%. Configure the Lambda function to increase the Auto Scaling group’s desired capacity and maximum capacity by 20%.
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer: **C. Create a predictive scaling policy for the Auto Scaling group. Configure the policy to scale based on forecast. Set the scaling metric to CPU utilization. Set the target value for the metric to 60%. In the policy, set the instances to pre-launch 30 minutes before the jobs run.**
+
+---
+
+### 📘 Explanation:
+
+**Predictive scaling** in EC2 Auto Scaling uses machine learning to forecast future traffic trends and automatically adjusts capacity ahead of time. Since the batch jobs are **weekly and follow a consistent pattern**, predictive scaling is **ideal** because it can pre-launch instances **30 minutes before the jobs start**, without manual intervention or needing additional resources to analyze trends.
+
+#### ✅ Why Option C is Correct:
+- Predictive scaling is designed to detect patterns and launch instances in advance, minimizing latency or startup lag.
+- Minimal operational overhead — no manual intervention is required once it's configured.
+- Supports the use case where usage trends (like scheduled jobs) are predictable and repetitive.
+
+#### 🚫 Why not the others?
+- **A.** Dynamic scaling only reacts to real-time metrics and does not pre-launch instances.
+- **B.** Scheduled scaling requires manual updates and is slightly less efficient than predictive.
+- **D.** EventBridge + Lambda adds unnecessary complexity and overhead.
+
+---
+
+### 🔗 References:
+
+- AWS Docs – [Predictive Scaling for EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-predictive-scaling.html)  
+- ExamTopics Discussion:  
+  [https://www.examtopics.com/discussions/amazon/view/100204-exam-aws-certified-solutions-architect-associate-saa-c03/](https://www.examtopics.com/discussions/amazon/view/100204-exam-aws-certified-solutions-architect-associate-saa-c03/)
+</details>
