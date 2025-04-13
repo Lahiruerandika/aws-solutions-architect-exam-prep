@@ -68,5 +68,9 @@ The company wants to:
 
 Let me know if you'd like this saved as a file or want to add a table of contents, diagrams, or more examples!
 
+### 🔗 References:
+
+- AWS Docs – [Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-gateway.html)  
+
 </details>
 
