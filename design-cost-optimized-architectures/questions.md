@@ -25,3 +25,48 @@ A company hosts a web application on multiple Amazon EC2 instances. The EC2 inst
 - [Amazon EC2 Instance Purchasing Options – AWS Docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html)
 
 </details>
+
+## Question #2  
+**Topic #1**
+ 
+ A company has an application that is running on Amazon EC2 instances. A solutions architect has standardized the company on a particular instance family and various instance sizes based on current needs.
+
+The company wants to:
+
+- Maximize cost savings over the next **3 years**
+- Retain the flexibility to change **instance family and sizes** in the next **6 months** based on usage and popularity
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+**✅ Correct Answer: A. Compute Savings Plan**
+
+### ✔ Why Compute Savings Plan?
+
+| Requirement                              | Benefit with Compute Savings Plan |
+|------------------------------------------|-----------------------------------|
+| Maximize cost savings                    | Up to **66% discount** vs On-Demand pricing |
+| Flexibility across instance families     | Applies to **any instance family**, size, OS, or region |
+| Anticipating usage pattern changes       | Ideal for unpredictable workloads |
+| Lower management overhead                | No manual reservations or tracking needed |
+
+## ❌ Why not the other options?
+
+- **B. EC2 Instance Savings Plan**
+  - Locked to a specific **instance family** within a region.
+  - Less flexible than Compute Savings Plan.
+
+- **C. Zonal Reserved Instances**
+  - Tied to a specific **Availability Zone**.
+  - No flexibility to change instance types or zones.
+
+- **D. Standard Reserved Instances**
+  - Locked to specific **instance types and configurations**.
+  - Most cost-effective only when workloads are very stable and predictable.
+
+---
+
+Let me know if you'd like this saved as a file or want to add a table of contents, diagrams, or more examples!
+
+</details>
+
