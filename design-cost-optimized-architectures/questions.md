@@ -1,5 +1,5 @@
-## Question #1  
-**Topic #1**
+## Question #01  
+### Topic #: 4 - Design Cost-Optimized Architectures
 
 A company hosts a web application on multiple Amazon EC2 instances. The EC2 instances are in an Auto Scaling group that scales in response to user demand. The company wants to optimize cost savings without making a long-term commitment.
 
@@ -26,19 +26,20 @@ A company hosts a web application on multiple Amazon EC2 instances. The EC2 inst
 
 </details>
 
-## Question #2  
-**Topic #1**
- 
+## Question #02  
+### Topic #: 4 - Design Cost-Optimized Architectures
+
+**Question:** 
  A company has an application that is running on Amazon EC2 instances. A solutions architect has standardized the company on a particular instance family and various instance sizes based on the current needs of the company.
 
 The company wants to maximize cost savings for the application over the next 3 years. The company needs to be able to change the instance family and sizes in the next 6 months based on application popularity and usage.
 
 **Which solution will meet these requirements MOST cost-effectively?**
 
-**A. Compute Savings Plan**
-**B. EC2 Instance Savings Plan**
-**C. Zonal Reserved Instances**
-**D. Standard Reserved Instances**
+**A.** Compute Savings Plan
+**B.** EC2 Instance Savings Plan
+**C.** Zonal Reserved Instances
+**D.** Standard Reserved Instances
 
 <details>
 <summary><strong>✅ Check Answer</strong></summary>
