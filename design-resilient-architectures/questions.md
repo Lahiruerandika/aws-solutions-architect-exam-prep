@@ -1,4 +1,4 @@
-## Question #: 7
+## Question #: 01
 ### Topic #: 1 - Design Resilient Architectures
 
 **Question:**  
@@ -47,5 +47,62 @@ A solutions architect needs to implement a solution that migrates the data to Am
 - AWS Docs – [Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-gateway.html)  
 - ExamTopics Discussion:  
   https://www.examtopics.com/discussions/amazon/view/100220-exam-aws-certified-solutions-architect-associate-saa-c03/
+
+</details>
+
+## Question #: 02
+### Topic #: 1 - Design Resilient Architectures
+
+**Question:**  
+A company hosts a three-tier web application on Amazon EC2 instances in a single Availability Zone. The web application uses a self-managed MySQL database that is hosted on an EC2 instance to store data in an Amazon Elastic Block Store (Amazon EBS) volume. The MySQL database currently uses a 1 TB Provisioned IOPS SSD (io2) EBS volume. The company expects traffic of 1,000 IOPS for both reads and writes at peak traffic.
+
+The company wants to minimize any disruptions, stabilize performance, and reduce costs while retaining the capacity for double the IOPS. The company wants to move the database tier to a fully managed solution that is highly available and fault tolerant.
+
+**Which solution will meet these requirements MOST cost-effectively?**
+
+**A.** Use a Multi-AZ deployment of an Amazon RDS for MySQL DB instance with an io2 Block Express EBS volume.  
+**B.** Use a Multi-AZ deployment of an Amazon RDS for MySQL DB instance with a General Purpose SSD (gp2) EBS volume.  
+**C.** Use Amazon S3 Intelligent-Tiering access tiers.  
+**D.** Use two large EC2 instances to host the database in active-passive mode.
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer: **B. Use a Multi-AZ deployment of an Amazon RDS for MySQL DB instance with a General Purpose SSD (gp2) EBS volume.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why Option B is Correct:
+- **Amazon RDS** in **Multi-AZ deployment** provides high availability and fault tolerance.
+- **General Purpose SSD (gp2)** volumes can provide **up to 3,000 IOPS** per volume, depending on
+### ✅ Correct Answer: **B. Use a Multi-AZ deployment of an Amazon RDS for MySQL DB instance with a General Purpose SSD (gp2) EBS volume.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why Option B is Correct:
+- **Amazon RDS** in **Multi-AZ deployment** provides high availability and fault tolerance.
+- **General Purpose SSD (gp2)** volumes can provide **up to 3,000 IOPS** per volume, depending on the size (you get 3 IOPS per GB). A 1 TB gp2 volume can provide **3,000 IOPS**, which is enough to handle **1,000 IOPS** read/write traffic and allows for future growth up to **double the current workload**.
+- This option also **reduces costs significantly** compared to using **Provisioned IOPS (io2)**.
+
+#### 🚫 Why not the others?
+
+- **A.** io2 Block Express is very high performance and low latency, but it's **more expensive** than gp2. Not needed for this IOPS level if cost is a concern.
+- **C.** Amazon S3 Intelligent-Tiering is **not suitable for databases**, as it’s designed for object storage and archival—not live transactional workloads.
+- **D.** Hosting a MySQL cluster on EC2 in an active-passive configuration increases operational complexity, lacks managed features, and is **not fault-tolerant by default** without additional setup and tooling.
+
+---
+
+### 🔗 References:
+
+- AWS Docs – [Amazon RDS Multi-AZ](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)  
+- AWS Docs – [EBS Volume Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)  
 
 </details>
