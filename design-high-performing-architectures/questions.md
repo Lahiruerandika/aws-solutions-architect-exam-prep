@@ -183,3 +183,50 @@ Currently, engineers complete this task by manually modifying the Auto Scaling g
 - ExamTopics Discussion:  
   [https://www.examtopics.com/discussions/amazon/view/100204-exam-aws-certified-solutions-architect-associate-saa-c03/](https://www.examtopics.com/discussions/amazon/view/100204-exam-aws-certified-solutions-architect-associate-saa-c03/)
 </details>
+
+## Question #: 05
+### Topic #: 2 - Design High-Performing Architectures
+
+**Question:**  
+A company is migrating an old application to AWS. The application runs a batch job every hour and is CPU intensive. The batch job takes 15 minutes on average with an on-premises server. The server has 64 virtual CPU (vCPU) and 512 GiB of memory.
+
+**Which solution will run the batch job within 15 minutes with the LEAST operational overhead?**
+
+**A.** Use AWS Lambda with functional scaling.  
+**B.** Use Amazon Elastic Container Service (Amazon ECS) with AWS Fargate.  
+**C.** Use Amazon Lightsail with AWS Auto Scaling.  
+**D.** Use AWS Batch on Amazon EC2.
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer: **D. Use AWS Batch on Amazon EC2**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why Option D is Correct:
+- **AWS Batch** is purpose-built for **batch processing** workloads.
+- It supports high-performance EC2 instances (such as those with **64 vCPUs and 512 GiB RAM**), ensuring the job completes within 15 minutes as required.
+- **Automatically provisions** and **scales compute resources**, reducing operational overhead.
+- AWS Batch handles job queues, retry logic, scheduling, and execution — giving a **fully managed batch computing experience**.
+
+#### 🚫 Why not the others?
+
+- **A.** AWS Lambda is not suitable for **long-running CPU-intensive tasks**. It has a **maximum timeout of 15 minutes** and cannot support high resource requirements like 64 vCPUs or 512 GiB RAM.
+- **B.** ECS with **Fargate** is serverless, but Fargate currently supports **only up to 4 vCPUs and 30 GiB RAM per task**, which is insufficient for this job.
+- **C.** Amazon Lightsail is designed for simple workloads. It lacks the **customizability and scale** needed for CPU-intensive jobs of this magnitude.
+
+---
+
+### 🔗 References:
+
+- AWS Docs – [AWS Batch Overview](https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html)  
+- AWS Compute Blog – [Choosing AWS Batch vs. Lambda for Compute Tasks](https://aws.amazon.com/blogs/compute/)
+
+</details>
