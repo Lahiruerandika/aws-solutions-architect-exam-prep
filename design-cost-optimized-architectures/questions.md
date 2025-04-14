@@ -79,3 +79,49 @@ Let me know if you'd like this saved as a file or want to add a table of content
 
 </details>
 
+## Question #: 03
+### Topic #: 4 - Design Cost-Optimized Architectures
+
+**Question:**  
+A company collects data from a large number of participants who use wearable devices. The company stores the data in an Amazon DynamoDB table and uses applications to analyze the data. The data workload is constant and predictable. The company wants to stay at or below its forecasted budget for DynamoDB.
+
+**Which solution will meet these requirements MOST cost-effectively?**
+
+**A.** Use provisioned mode and DynamoDB Standard-Infrequent Access (DynamoDB Standard-IA). Reserve capacity for the forecasted workload.  
+**B.** Use provisioned mode. Specify the read capacity units (RCUs) and write capacity units (WCUs).  
+**C.** Use on-demand mode. Set the read capacity units (RCUs) and write capacity units (WCUs) high enough to accommodate changes in the workload.  
+**D.** Use on-demand mode. Specify the read capacity units (RCUs) and write capacity units (WCUs) with reserved capacity.
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer: **B. Use provisioned mode. Specify the read capacity units (RCUs) and write capacity units (WCUs).**
+
+---
+
+### 📘 Explanation:
+
+Since the company’s workload is **constant and predictable**, the most **cost-effective** approach is to use **provisioned mode**. In this mode, you can manually define the required RCUs and WCUs to match the expected usage. This allows tighter control over costs and avoids overprovisioning.
+
+#### ✅ Why Option B is Correct:
+- **Provisioned mode** fits **predictable workloads**, offering the ability to reserve just enough capacity.
+- Avoids the overhead of on-demand costs.
+- Allows the company to **stay within budget** by avoiding unnecessary scaling or unpredictable usage charges.
+
+#### 🚫 Why not the others?
+
+- **A.** Incorrect: DynamoDB Standard-IA is meant for **infrequently accessed** data, but the data here is **frequently accessed**, so this storage class is not appropriate.
+- **C.** Incorrect: On-demand mode auto-scales, which is better for unpredictable workloads, and may be **more costly** for consistent workloads.
+- **D.** Incorrect: On-demand mode does **not** allow manual specification of RCUs/WCUs or use reserved capacity, so the suggestion is technically invalid.
+
+---
+
+### 🔗 References:
+
+- AWS Docs – [DynamoDB Read/Write Capacity Modes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html)  
+- AWS Docs – [DynamoDB Table Classes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/table-class.html)  
+</details>
