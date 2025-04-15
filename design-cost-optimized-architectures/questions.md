@@ -138,3 +138,31 @@ A company stores its data objects in Amazon S3 Standard storage. A solutions arc
 **B.** Move the data objects to S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days.  
 **C.** Move the data objects to S3 One Zone-Infrequent Access (S3 One Zone-IA) after 30 days.  
 **D.** Move the data objects to S3 One Zone-Infrequent Access (S3 One Zone-IA) immediately.
+
+---
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+---
+### ✅ Correct Answer: **B. Move the data objects to S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why Option B is Correct:
+- **S3 Standard-IA** is designed for data that is **accessed less frequently but must be immediately accessible** when needed.
+- It offers the **same high durability and availability** as S3 Standard, but at a **lower cost** for storage and a slightly higher cost for retrieval.
+- Perfect for **rarely accessed data** that still needs **high resiliency and immediate access** — exactly matching the use case described.
+- You can automate this using **S3 Lifecycle policies** to transition data to Standard-IA after 30 days.
+
+#### 🚫 Why not the others?
+
+- **A.** S3 Glacier Deep Archive is for **archival** storage. Data is **not immediately accessible** — retrieval takes hours.
+- **C. & D.** S3 One Zone-IA is cheaper but stores data in **only one Availability Zone**, which does **not meet high availability or resiliency** requirements.
+
+---
+
+### 🔗 References:
+
+- AWS Documentation – [S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/)
+- AWS Docs – [S3 Lifecycle Configuration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-configuration-examples.html)
