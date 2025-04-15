@@ -166,3 +166,6 @@ A company stores its data objects in Amazon S3 Standard storage. A solutions arc
 
 - AWS Documentation – [S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/)
 - AWS Docs – [S3 Lifecycle Configuration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-configuration-examples.html)
+- ExamTopics Discussion: https://www.examtopics.com/discussions/amazon/view/100229-exam-aws-certified-solutions-architect-associate-saa-c03/
+
+</details>
