@@ -248,6 +248,8 @@ A gaming company is moving its public scoreboard from a data center to the AWS C
 
 ---
 
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
 
 ---
 
