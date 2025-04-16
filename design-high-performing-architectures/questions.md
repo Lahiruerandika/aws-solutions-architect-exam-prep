@@ -247,3 +247,36 @@ A gaming company is moving its public scoreboard from a data center to the AWS C
 **E.** Store the server-side code on a General Purpose SSD (gp2) Amazon Elastic Block Store (Amazon EBS) volume. Mount the EBS volume on each EC2 instance to share the files.
 
 ---
+
+
+---
+
+### ✅ Correct Answers:  
+**A.** Store the static files on Amazon S3. Use Amazon CloudFront to cache objects at the edge.  
+**D.** Store the server-side code on Amazon FSx for Windows File Server. Mount the FSx for Windows File Server volume on each EC2 instance to share the files.
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why A is Correct:
+- **Amazon S3** is ideal for hosting static content (HTML, CSS, JS, images).
+- **Amazon CloudFront** is a content delivery network (CDN) that caches S3 content at edge locations, reducing latency and improving availability.
+
+#### ✅ Why D is Correct:
+- **Amazon FSx for Windows File Server** is a fully managed Windows-compatible file system, perfect for Windows EC2 instances.
+- It supports Windows file sharing protocols like SMB and integrates well for server-side shared code needs.
+- Highly available and scalable.
+
+#### 🚫 Why not the others?
+
+- **B.** Amazon ElastiCache is used for **in-memory caching** of frequently accessed data, not static files.
+- **C.** Amazon EFS is a Linux-based solution, not ideal for **Windows EC2 instances**.
+- **E.** Amazon EBS volumes **cannot be shared** across multiple EC2 instances, which defeats the purpose of sharing server-side code.
+
+---
+
+### 🔗 References:
+
+- AWS Docs – [Amazon S3 with CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigin.html)  
+- AWS Docs – [Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)
