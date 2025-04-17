@@ -38,7 +38,6 @@ AWS **Global Accelerator** is specifically designed for applications that requir
 
 - Related discussion on ExamTopics:  
   https://www.examtopics.com/discussions/amazon/view/100130-exam-aws-certified-solutions-architect-associate-saa-c03/  
-  https://www.examtopics.com/discussions/amazon/view/100197-exam-aws-certified-solutions-architect-associate-saa-c03/
 
 </details>
 
@@ -84,8 +83,7 @@ When using AWS Lambda with Amazon RDS, a common challenge is **managing database
 
 - AWS Docs – [Using Amazon RDS Proxy with AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/services-rds.html)  
 - AWS Docs – [Amazon RDS Proxy](https://docs.aws.amazon.com/rds/latest/UserGuide/rds-proxy.html)  
-- ExamTopics Discussions:  
-  https://www.examtopics.com/discussions/amazon/view/83199-exam-aws-certified-solutions-architect-associate-saa-c02/
+- ExamTopics Discussions - (https://www.examtopics.com/discussions/amazon/view/83199-exam-aws-certified-solutions-architect-associate-saa-c02/)
 
 
 </details>
@@ -130,8 +128,7 @@ Amazon SQS has a **hard limit of 256 KB** for message size. If your application 
 ### 🔗 References:
 
 - AWS Docs – [Amazon SQS Extended Client Library for Java](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-s3-messages.html)  
-- ExamTopics Discussion:  
-  https://www.examtopics.com/discussions/amazon/view/100202-exam-aws-certified-solutions-architect-associate-saa-c03/
+- ExamTopics Discussion - (https://www.examtopics.com/discussions/amazon/view/100202-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
 
@@ -180,9 +177,7 @@ Currently, engineers complete this task by manually modifying the Auto Scaling g
 ### 🔗 References:
 
 - AWS Docs – [Predictive Scaling for EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-predictive-scaling.html)  
-- ExamTopics Discussion:  
-  [https://www.examtopics.com/discussions/amazon/view/100204-exam-aws-certified-solutions-architect-associate-saa-c03/](https://www.examtopics.com/discussions/amazon/view/100204-exam-aws-certified-solutions-architect-associate-saa-c03/)
-</details>
+- ExamTopics Discussion - (https://www.examtopics.com/discussions/amazon/view/100204-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 ## Question #: 05
 ### Topic #: 2 - Design High-Performing Architectures
@@ -328,6 +323,6 @@ A social media company runs its application on Amazon EC2 instances behind an Ap
 ### 🔗 References:
 
 - AWS – [Serverless Image Handler](https://github.com/awslabs/serverless-image-handler)  
-- AWS Docs – [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg
-
+- AWS Docs – [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg)
+- ExamTopics Discussion - (https://www.examtopics.com/discussions/amazon/view/100231-exam-aws-certified-solutions-architect-associate-saa-c03/)
 </details>
