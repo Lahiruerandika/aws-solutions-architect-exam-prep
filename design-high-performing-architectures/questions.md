@@ -282,3 +282,18 @@ A gaming company is moving its public scoreboard from a data center to the AWS C
 
 - AWS Docs – [Amazon S3 with CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigin.html)  
 - AWS Docs – [Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)
+
+
+## Question #: 07
+### Topic #: 3 - Design Secure and High-Performing Architectures
+
+**Question:**  
+A social media company runs its application on Amazon EC2 instances behind an Application Load Balancer (ALB). The ALB is the origin for an Amazon CloudFront distribution. The application has more than a billion images stored in an Amazon S3 bucket and processes thousands of images each second. The company wants to resize the images dynamically and serve appropriate formats to clients.
+
+**Which solution will meet these requirements with the LEAST operational overhead?**
+
+**A.** Install an external image management library on an EC2 instance. Use the image management library to process the images.  
+**B.** Create a CloudFront origin request policy. Use the policy to automatically resize images and to serve the appropriate format based on the User-Agent HTTP header in the request.  
+**C.** Use a Lambda@Edge function with an external image management library. Associate the Lambda@Edge function with the CloudFront behaviors that serve the images.  
+**D.** Create a CloudFront response headers policy. Use the policy to automatically resize images and to serve the appropriate format based on the User-Agent HTTP header in the request.
+
