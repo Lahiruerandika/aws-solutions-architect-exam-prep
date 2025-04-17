@@ -297,3 +297,37 @@ A social media company runs its application on Amazon EC2 instances behind an Ap
 **C.** Use a Lambda@Edge function with an external image management library. Associate the Lambda@Edge function with the CloudFront behaviors that serve the images.  
 **D.** Create a CloudFront response headers policy. Use the policy to automatically resize images and to serve the appropriate format based on the User-Agent HTTP header in the request.
 
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. Use a Lambda@Edge function with an external image management library. Associate the Lambda@Edge function with the CloudFront behaviors that serve the images.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why C is Correct:
+- **Lambda@Edge** allows running functions at AWS edge locations, enabling on-the-fly image manipulation (resize, reformat) close to users.
+- This offloads the compute from your backend (EC2 or ALB) and **reduces latency** while improving scalability and operational simplicity.
+- Many solutions (like AWS's [Serverless Image Handler](https://github.com/awslabs/serverless-image-handler)) use this approach.
+- It **minimizes operational overhead** as you don’t need to manage EC2 instances or additional infrastructure.
+
+#### 🚫 Why not the others?
+
+- **A.** Installing image libraries on EC2 adds significant **operational overhead** — you’ll manage scaling, patching, and monitoring yourself.
+- **B.** CloudFront **origin request policies** control what headers/cookies/query strings are forwarded — they **do not perform image resizing**.
+- **D.** **Response headers policies** are used to set cache control, security headers, etc., and do **not support dynamic image manipulation**.
+
+---
+
+### 🔗 References:
+
+- AWS – [Serverless Image Handler](https://github.com/awslabs/serverless-image-handler)  
+- AWS Docs – [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg
+
+</details>
