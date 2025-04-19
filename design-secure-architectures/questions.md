@@ -41,3 +41,35 @@ A hospital needs to store patient records in an Amazon S3 bucket. The hospital�
 **B.** Use the aws:SecureTransport condition on S3 bucket policies to allow only encrypted connections over HTTPS (TLS). Configure default encryption for each S3 bucket to use server-side encryption with S3 managed encryption keys (SSE-S3). Assign the compliance team to manage the SSE-S3 keys.  
 **C.** Use the aws:SecureTransport condition on S3 bucket policies to allow only encrypted connections over HTTPS (TLS). Configure default encryption for each S3 bucket to use server-side encryption with AWS KMS keys (SSE-KMS). Assign the compliance team to manage the KMS keys.  
 **D.** Use the aws:SecureTransport condition on S3 bucket policies to allow only encrypted connections over HTTPS (TLS). Use Amazon Macie to protect the sensitive data that is stored in Amazon S3. Assign the compliance team to manage Macie.
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+### ✅ Correct Answer:  
+**C. Use the aws:SecureTransport condition on S3 bucket policies to allow only encrypted connections over HTTPS (TLS). Configure default encryption for each S3 bucket to use server-side encryption with AWS KMS keys (SSE-KMS). Assign the compliance team to manage the KMS keys.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why C is Correct:
+- The `aws:SecureTransport` condition ensures **encryption in transit** by only allowing HTTPS requests.
+- **SSE-KMS** encrypts data at rest using **customer-managed AWS KMS keys**, allowing fine-grained access control and auditability.
+- This setup meets **HIPAA compliance requirements** for protecting PHI.
+- The **compliance team can control the KMS keys**, satisfying the requirement for key management.
+
+#### 🚫 Why not the others?
+
+- **A.** ACM public certificates cannot be directly associated with S3 buckets for upload/download access; S3 uses HTTPS natively.
+- **B.** SSE-S3 does encrypt at rest but **does not allow customer-managed key administration**, which the compliance team requires.
+- **D.** Amazon Macie helps **detect sensitive data** but does **not encrypt** it — and doesn’t replace KMS or bucket policies for encryption controls.
+
+---
+
+### 🔗 References:
+
+- AWS Docs – [Protecting Data Using Server-Side Encryption with KMS keys (SSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html)  
+- AWS Docs – [Protecting Data In Transit](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html#encrypt-in-transit)  
+- AWS Docs – [Bucket Policy Examples: Enforcing HTTPS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-use-case-ssl)
+
+</details>
