@@ -90,3 +90,37 @@ A company uses Amazon API Gateway to run a private gateway with two REST APIs in
 **B.** Use an interface endpoint.  
 **C.** Use a gateway endpoint.  
 **D.** Add an Amazon Simple Queue Service (Amazon SQS) queue between the two REST APIs.
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. Use an interface endpoint.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why B is Correct:
+- **Private API Gateway** endpoints can be accessed via **interface VPC endpoints (powered by AWS PrivateLink)**.
+- This ensures that communication between services **stays within the VPC**, avoiding traversal over the public internet.
+- Using an interface endpoint enables **internal routing** between the REST APIs with **minimal code or architecture changes**.
+
+#### 🚫 Why not the others?
+
+- **A.** Adding an API key does not affect network routing. It is only for authorization.
+- **C.** Gateway endpoints are used for **S3 and DynamoDB** only, not API Gateway.
+- **D.** Introducing SQS adds unnecessary complexity and asynchronous communication, which is **not needed** and would **require major changes to the application logic**.
+
+---
+
+### 🔗 References:
+
+- AWS Docs – [Accessing Private APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-private-apis.html)  
+- AWS Docs – [Interface VPC Endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-services-overview.html) 
+
+</details>
