@@ -77,3 +77,16 @@ A hospital needs to store patient records in an Amazon S3 bucket. The hospitalâ€
 - AWS Docs â€“ [Bucket Policy Examples: Enforcing HTTPS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-use-case-ssl)
 
 </details>
+
+## Question #: 03
+### Topic #: 2 - Design Secure Architectures and Applications
+
+**Question:**  
+A company uses Amazon API Gateway to run a private gateway with two REST APIs in the same VPC. The BuyStock RESTful web service calls the CheckFunds RESTful web service to ensure that enough funds are available before a stock can be purchased. The company has noticed in the VPC flow logs that the BuyStock RESTful web service calls the CheckFunds RESTful web service over the internet instead of through the VPC. A solutions architect must implement a solution so that the APIs communicate through the VPC.
+
+**Which solution will meet these requirements with the FEWEST changes to the code?**
+
+**A.** Add an X-API-Key header in the HTTP header for authorization.  
+**B.** Use an interface endpoint.  
+**C.** Use a gateway endpoint.  
+**D.** Add an Amazon Simple Queue Service (Amazon SQS) queue between the two REST APIs.
