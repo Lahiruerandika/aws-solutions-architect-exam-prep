@@ -122,5 +122,5 @@ A company uses Amazon API Gateway to run a private gateway with two REST APIs in
 
 - AWS Docs – [Accessing Private APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-private-apis.html)  
 - AWS Docs – [Interface VPC Endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-services-overview.html) 
-
+- ExamTopics Discussion – Question (https://www.examtopics.com/discussions/amazon/view/100238-exam-aws-certified-solutions-architect-associate-saa-c03/)
 </details>
