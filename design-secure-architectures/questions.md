@@ -140,7 +140,8 @@ A company stores confidential data in an Amazon Aurora PostgreSQL database in th
 
 ---
 
-> 🔘 **Check Answer**
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
 
 ---
 
@@ -167,3 +168,5 @@ A company stores confidential data in an Amazon Aurora PostgreSQL database in th
 ### 🔗 Reference:
 - AWS Docs – [Sharing encrypted snapshots](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_ShareSnapshot.html)
 - AWS Docs – [Granting cross-account access to KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying.html)
+
+</details>
