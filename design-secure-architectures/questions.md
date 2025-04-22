@@ -27,6 +27,7 @@ A company is building a mobile app on AWS. The company wants to expand its reach
 - [Serving Private Content with Signed URLs and Cookies – Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html)
 - [Using CloudFront for Video Streaming – AWS](https://docs.aws.amazon.com/whitepapers/latest/video-streaming-cloudfront/video-streaming-cloudfront.html)
 - [ExamTopics Discussion – Question #100130 (SAA-C03)](https://www.examtopics.com/discussions/amazon/view/100130-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
 </details>
 
 
@@ -79,7 +80,6 @@ A hospital needs to store patient records in an Amazon S3 bucket. The hospital�
 </details>
 
 ## Question #: 03
-### Topic #: 2 - Design Secure Architectures and Applications
 
 **Question:**  
 A company uses Amazon API Gateway to run a private gateway with two REST APIs in the same VPC. The BuyStock RESTful web service calls the CheckFunds RESTful web service to ensure that enough funds are available before a stock can be purchased. The company has noticed in the VPC flow logs that the BuyStock RESTful web service calls the CheckFunds RESTful web service over the internet instead of through the VPC. A solutions architect must implement a solution so that the APIs communicate through the VPC.
@@ -126,7 +126,6 @@ A company uses Amazon API Gateway to run a private gateway with two REST APIs in
 </details>
 
 ## Question #: 04
-### Topic #: 2 - Design Secure Architectures and Applications
 
 **Question:**  
 A company stores confidential data in an Amazon Aurora PostgreSQL database in the ap-southeast-3 Region. The database is encrypted with an AWS Key Management Service (AWS KMS) customer managed key. The company was recently acquired and must securely share a backup of the database with the acquiring company’s AWS account in ap-southeast-3.
