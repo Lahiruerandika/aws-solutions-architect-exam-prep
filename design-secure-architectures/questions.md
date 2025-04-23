@@ -186,7 +186,8 @@ A company stores confidential data in an Amazon Aurora PostgreSQL database in th
 
 ---
 
-> 🔘 **Check Answer**
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
 
 ---
 
