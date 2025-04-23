@@ -172,17 +172,18 @@ A company stores confidential data in an Amazon Aurora PostgreSQL database in th
 
 ## Question #: 05
 
-**Question:** 
-
 **Question:**  
-A company stores confidential data in an Amazon Aurora PostgreSQL database in the ap-southeast-3 Region. The database is encrypted with an AWS Key Management Service (AWS KMS) customer managed key. The company was recently acquired and must securely share a backup of the database with the acquiring company’s AWS account in ap-southeast-3.
+A company uses a 100 GB Amazon RDS for Microsoft SQL Server Single-AZ DB instance in the us-east-1 Region to store customer transactions. The company needs high availability and automatic recovery for the DB instance.
 
-**What should a solutions architect do to meet these requirements?**
+The company must also run reports on the RDS database several times a year. The report process causes transactions to take longer than usual to post to the customers’ accounts. The company needs a solution that will improve the performance of the report process.
 
-**A.** Create a database snapshot. Copy the snapshot to a new unencrypted snapshot. Share the new snapshot with the acquiring company’s AWS account.  
-**B.** Create a database snapshot. Add the acquiring company’s AWS account to the KMS key policy. Share the snapshot with the acquiring company’s AWS account.  
-**C.** Create a database snapshot that uses a different AWS managed KMS key. Add the acquiring company’s AWS account to the KMS key alias. Share the snapshot with the acquiring company’s AWS account.  
-**D.** Create a database snapshot. Download the database snapshot. Upload the database snapshot to an Amazon S3 bucket. Update the S3 bucket policy to allow access from the acquiring company’s AWS account.
+**Which combination of steps will meet these requirements? (Choose two.)**
+
+**A.** Modify the DB instance from a Single-AZ DB instance to a Multi-AZ deployment.  
+**B.** Take a snapshot of the current DB instance. Restore the snapshot to a new RDS deployment in another Availability Zone.  
+**C.** Create a read replica of the DB instance in a different Availability Zone. Point all requests for reports to the read replica.  
+**D.** Migrate the database to RDS Custom.  
+**E.** Use RDS Proxy to limit reporting requests to the maintenance window.
 
 ---
 
@@ -191,28 +192,31 @@ A company stores confidential data in an Amazon Aurora PostgreSQL database in th
 
 ---
 
-### ✅ Correct Answer:  
-**B. Create a database snapshot. Add the acquiring company’s AWS account to the KMS key policy. Share the snapshot with the acquiring company’s AWS account.**
+### ✅ Correct Answers:  
+**A. Modify the DB instance from a Single-AZ DB instance to a Multi-AZ deployment.**  
+**C. Create a read replica of the DB instance in a different Availability Zone. Point all requests for reports to the read replica.**
 
 ---
 
 ### 📘 Explanation:
 
-#### ✅ Why B is Correct:
-- Since the Aurora database is **encrypted with a customer managed KMS key**, sharing the snapshot with another AWS account **requires that account to have decrypt permissions** on the KMS key.
-- You must **update the KMS key policy** to allow the acquiring company’s AWS account access.
-- Once that’s done, you can **share the snapshot** using Amazon RDS's snapshot sharing feature.
+#### ✅ Why A is Correct:
+- Converting from **Single-AZ to Multi-AZ** improves **high availability and automatic recovery**, ensuring failover to a standby in case of instance failure.
+
+#### ✅ Why C is Correct:
+- Creating a **read replica** offloads the **reporting workload** from the primary DB, improving **transaction performance** on the main database.
 
 #### 🚫 Why the others are incorrect:
 
-- **A.** You **cannot copy an encrypted snapshot to an unencrypted one** for Aurora — it’s not supported for security reasons.
-- **C.** Changing the KMS key or alias alone doesn't help. Sharing access requires **explicit permissions** on the key, not just the alias.
-- **D.** You **cannot download RDS or Aurora snapshots** directly like regular files. There is **no mechanism to "download" a snapshot** and upload it to S3.
+- **B.** Restoring a snapshot is a **manual, time-consuming** process and not intended for regular reporting or HA.
+- **D.** RDS Custom is for **legacy or highly specialized** configurations and doesn’t provide a direct benefit for HA or performance in this use case.
+- **E.** RDS Proxy improves **connection pooling** and application scaling, but it does not directly improve **reporting performance** or manage scheduling for reports.
 
 ---
 
 ### 🔗 Reference:
-- AWS Docs – [Sharing encrypted snapshots](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_ShareSnapshot.html)
-- AWS Docs – [Granting cross-account access to KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying.html)
+- [Amazon RDS Multi-AZ Deployments](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)  
+- [Amazon RDS Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100300-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
