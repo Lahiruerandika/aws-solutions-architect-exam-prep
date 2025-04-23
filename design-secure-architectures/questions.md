@@ -183,3 +183,33 @@ A company stores confidential data in an Amazon Aurora PostgreSQL database in th
 **B.** Create a database snapshot. Add the acquiring company’s AWS account to the KMS key policy. Share the snapshot with the acquiring company’s AWS account.  
 **C.** Create a database snapshot that uses a different AWS managed KMS key. Add the acquiring company’s AWS account to the KMS key alias. Share the snapshot with the acquiring company’s AWS account.  
 **D.** Create a database snapshot. Download the database snapshot. Upload the database snapshot to an Amazon S3 bucket. Update the S3 bucket policy to allow access from the acquiring company’s AWS account.
+
+---
+
+> 🔘 **Check Answer**
+
+---
+
+### ✅ Correct Answer:  
+**B. Create a database snapshot. Add the acquiring company’s AWS account to the KMS key policy. Share the snapshot with the acquiring company’s AWS account.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why B is Correct:
+- Since the Aurora database is **encrypted with a customer managed KMS key**, sharing the snapshot with another AWS account **requires that account to have decrypt permissions** on the KMS key.
+- You must **update the KMS key policy** to allow the acquiring company’s AWS account access.
+- Once that’s done, you can **share the snapshot** using Amazon RDS's snapshot sharing feature.
+
+#### 🚫 Why the others are incorrect:
+
+- **A.** You **cannot copy an encrypted snapshot to an unencrypted one** for Aurora — it’s not supported for security reasons.
+- **C.** Changing the KMS key or alias alone doesn't help. Sharing access requires **explicit permissions** on the key, not just the alias.
+- **D.** You **cannot download RDS or Aurora snapshots** directly like regular files. There is **no mechanism to "download" a snapshot** and upload it to S3.
+
+---
+
+### 🔗 Reference:
+- AWS Docs – [Sharing encrypted snapshots](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_ShareSnapshot.html)
+- AWS Docs – [Granting cross-account access to KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying.html)
