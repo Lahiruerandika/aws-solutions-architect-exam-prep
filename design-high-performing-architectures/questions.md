@@ -368,3 +368,5 @@ A solutions architect is designing a company’s disaster recovery (DR) architec
 ### 🔗 References:
 - [Aurora Global Databases](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)  
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100204-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
+</details>
