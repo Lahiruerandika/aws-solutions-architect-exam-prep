@@ -1,5 +1,4 @@
 ## Question #: 01
-### Topic #: 2 - Design High-Performing Architectures
 
 **Question:**  
 A company is designing the network for an online multi-player game. The game uses the UDP networking protocol and will be deployed in eight AWS Regions. The network architecture needs to minimize latency and packet loss to give end users a high-quality gaming experience.
@@ -42,7 +41,6 @@ AWS **Global Accelerator** is specifically designed for applications that requir
 </details>
 
 ## Question #: 02
-### Topic #: 2 - Design High-Performing Architectures
 
 **Question:**  
 A company hosts a serverless application on AWS. The application uses Amazon API Gateway, AWS Lambda, and an Amazon RDS for PostgreSQL database. The company notices an increase in application errors that result from database connection timeouts during times of peak traffic or unpredictable traffic. The company needs a solution that reduces the application failures with the least amount of change to the code.
@@ -89,7 +87,6 @@ When using AWS Lambda with Amazon RDS, a common challenge is **managing database
 </details>
 
 ## Question #: 03
-### Topic #: 2 - Design High-Performing Architectures
 
 **Question:**  
 A company has a Java application that uses Amazon Simple Queue Service (Amazon SQS) to parse messages. The application cannot parse messages that are larger than 256 KB in size. The company wants to implement a solution to give the application the ability to parse messages as large as 50 MB.
@@ -133,7 +130,6 @@ Amazon SQS has a **hard limit of 256 KB** for message size. If your application 
 </details>
 
 ## Question #: 04
-### Topic #: 2 - Design High-Performing Architectures
 
 **Question:**  
 A transaction processing company has weekly scripted batch jobs that run on Amazon EC2 instances. The EC2 instances are in an Auto Scaling group. The number of transactions can vary, but the baseline CPU utilization that is noted on each run is at least 60%. The company needs to provision the capacity 30 minutes before the jobs run.
@@ -183,7 +179,6 @@ Currently, engineers complete this task by manually modifying the Auto Scaling g
 </details>
 
 ## Question #: 05
-### Topic #: 2 - Design High-Performing Architectures
 
 **Question:**  
 A company is migrating an old application to AWS. The application runs a batch job every hour and is CPU intensive. The batch job takes 15 minutes on average with an on-premises server. The server has 64 virtual CPU (vCPU) and 512 GiB of memory.
@@ -231,7 +226,6 @@ A company is migrating an old application to AWS. The application runs a batch j
 
 
 ## Question #: 06
-### Topic #: 3 - Design Secure and High-Performing Architectures
 
 **Question:**  
 A gaming company is moving its public scoreboard from a data center to the AWS Cloud. The company uses Amazon EC2 Windows Server instances behind an Application Load Balancer to host its dynamic application. The company needs a highly available storage solution for the application. The application consists of static files and dynamic server-side code.
@@ -284,7 +278,6 @@ A gaming company is moving its public scoreboard from a data center to the AWS C
 </details>
 
 ## Question #: 07
-### Topic #: 3 - Design Secure and High-Performing Architectures
 
 **Question:**  
 A social media company runs its application on Amazon EC2 instances behind an Application Load Balancer (ALB). The ALB is the origin for an Amazon CloudFront distribution. The application has more than a billion images stored in an Amazon S3 bucket and processes thousands of images each second. The company wants to resize the images dynamically and serve appropriate formats to clients.
