@@ -281,6 +281,7 @@ A gaming company is moving its public scoreboard from a data center to the AWS C
 - AWS Docs – [Amazon S3 with CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigin.html)  
 - AWS Docs – [Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)
 
+</details>
 
 ## Question #: 07
 ### Topic #: 3 - Design Secure and High-Performing Architectures
