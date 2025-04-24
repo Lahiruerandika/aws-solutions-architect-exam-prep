@@ -179,6 +179,9 @@ Currently, engineers complete this task by manually modifying the Auto Scaling g
 - AWS Docs – [Predictive Scaling for EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-predictive-scaling.html)  
 - ExamTopics Discussion - (https://www.examtopics.com/discussions/amazon/view/100204-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
+
+</details>
+
 ## Question #: 05
 ### Topic #: 2 - Design High-Performing Architectures
 
