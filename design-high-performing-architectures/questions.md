@@ -326,3 +326,16 @@ A social media company runs its application on Amazon EC2 instances behind an Ap
 - AWS Docs – [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg)
 - ExamTopics Discussion - (https://www.examtopics.com/discussions/amazon/view/100231-exam-aws-certified-solutions-architect-associate-saa-c03/)
 </details>
+
+## Question #: 08
+
+**Question:**  
+A solutions architect is designing a company’s disaster recovery (DR) architecture. The company has a MySQL database that runs on an Amazon EC2 instance in a private subnet with scheduled backup. The DR design needs to include multiple AWS Regions.
+
+**Which solution will meet these requirements with the LEAST operational overhead?**
+
+**A.** Migrate the MySQL database to multiple EC2 instances. Configure a standby EC2 instance in the DR Region. Turn on replication.  
+**B.** Migrate the MySQL database to Amazon RDS. Use a Multi-AZ deployment. Turn on read replication for the primary DB instance in the different Availability Zones.  
+**C.** Migrate the MySQL database to an Amazon Aurora global database. Host the primary DB cluster in the primary Region. Host the secondary DB cluster in the DR Region.  
+**D.** Store the scheduled backup of the MySQL database in an Amazon S3 bucket that is configured for S3 Cross-Region Replication (CRR). Use the data backup to restore the database in the DR Region.
+
