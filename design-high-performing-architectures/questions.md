@@ -339,3 +339,32 @@ A solutions architect is designing a company’s disaster recovery (DR) architec
 **C.** Migrate the MySQL database to an Amazon Aurora global database. Host the primary DB cluster in the primary Region. Host the secondary DB cluster in the DR Region.  
 **D.** Store the scheduled backup of the MySQL database in an Amazon S3 bucket that is configured for S3 Cross-Region Replication (CRR). Use the data backup to restore the database in the DR Region.
 
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. Migrate the MySQL database to an Amazon Aurora global database. Host the primary DB cluster in the primary Region. Host the secondary DB cluster in the DR Region.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why C is Correct:
+- **Aurora global databases** are specifically designed for **multi-Region**, low-latency disaster recovery with **minimal operational overhead**.
+- AWS handles **replication, failover**, and **synchronization**, reducing the need for manual configuration or maintenance.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Running MySQL on EC2 with manual replication introduces **high operational overhead** and requires **custom scripting and maintenance**.
+- **B.** Amazon RDS Multi-AZ deployments are limited to **one Region**. You'd need **cross-Region replication**, which RDS does not support natively for Multi-AZ deployments.
+- **D.** CRR-based backup and restore can work, but it is **not real-time** and has **longer RTO**, involving manual **restore steps**, which increases operational overhead.
+
+---
+
+### 🔗 References:
+- [Aurora Global Databases](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)  
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100204-exam-aws-certified-solutions-architect-associate-saa-c03/)
