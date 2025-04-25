@@ -235,7 +235,8 @@ A company wants to restrict access to the content of one of its main web applica
 
 ---
 
-> 🔘 **Check Answer**
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
 
 ---
 
@@ -264,4 +265,6 @@ A company wants to restrict access to the content of one of its main web applica
 - [Amazon Cognito Overview](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)  
 - [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html)  
 - [CloudFront Global Delivery](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)  
-- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100300-exam-aws-certified-solutions-architect-associate-saa-c03/)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100341-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
+</details>
