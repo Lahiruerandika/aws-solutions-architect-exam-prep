@@ -232,3 +232,36 @@ A company wants to restrict access to the content of one of its main web applica
 **B.** Use AWS Directory Service for Microsoft Active Directory for authentication. Use AWS Lambda for authorization. Use an Application Load Balancer to serve the web application globally.  
 **C.** Use Amazon Cognito for authentication. Use AWS Lambda for authorization. Use Amazon S3 Transfer Acceleration to serve the web application globally.  
 **D.** Use AWS Directory Service for Microsoft Active Directory for authentication. Use Lambda@Edge for authorization. Use AWS Elastic Beanstalk to serve the web application globally.
+
+---
+
+> 🔘 **Check Answer**
+
+---
+
+### ✅ Correct Answer:  
+**A. Use Amazon Cognito for authentication. Use Lambda@Edge for authorization. Use Amazon CloudFront to serve the web application globally.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why A is Correct:
+- **Amazon Cognito** provides a **cost-effective authentication** mechanism suitable for small user bases and easily scalable.
+- **Lambda@Edge** enables **low-latency, geographically distributed authorization**, enforcing rules near the user.
+- **Amazon CloudFront** provides **global content delivery**, enhancing speed and performance for users worldwide.
+- This combination is **fully serverless**, **highly scalable**, and incurs **low operational costs**, especially for <100 users.
+
+#### 🚫 Why the other options are incorrect:
+
+- **B.** AWS Directory Service is **overkill and costly** for fewer than 100 users and isn't serverless.
+- **C.** S3 Transfer Acceleration is for **upload performance**, not ideal for web app delivery. Lambda doesn't provide global low-latency like Lambda@Edge.
+- **D.** AWS Directory Service and Elastic Beanstalk **add operational overhead** and cost, making it less suitable for a lightweight, serverless solution.
+
+---
+
+### 🔗 References:
+- [Amazon Cognito Overview](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)  
+- [Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html)  
+- [CloudFront Global Delivery](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)  
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100300-exam-aws-certified-solutions-architect-associate-saa-c03/)
