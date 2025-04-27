@@ -118,3 +118,34 @@ A company is moving its data management application to AWS. The company wants to
 **B.** Build out the workflow in AWS Step Functions. Deploy the application on Amazon EC2 instances. Use Step Functions to invoke the workflow steps on the EC2 instances.  
 **C.** Build out the workflow in Amazon EventBridge. Use EventBridge to invoke AWS Lambda functions on a schedule to process the workflow steps.  
 **D.** Build out the workflow in AWS Step Functions. Use Step Functions to create a state machine. Use the state machine to invoke AWS Lambda functions to process the workflow steps.
+
+---
+
+> 🔘 **Check Answer**
+
+---
+
+### ✅ Correct Answer:  
+**D. Build out the workflow in AWS Step Functions. Use Step Functions to create a state machine. Use the state machine to invoke AWS Lambda functions to process the workflow steps.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why D is Correct:
+- **AWS Step Functions** allow the creation of a **serverless, event-driven workflow** that coordinates components, ensuring minimal operational overhead.
+- You can design a **state machine** that defines the sequence of steps in the workflow.
+- **AWS Lambda** functions are invoked by Step Functions at each step, making the architecture **highly distributed, serverless, and event-driven**.
+- This approach is **cost-effective**, **scalable**, and **requires minimal maintenance**.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** AWS Glue is primarily for **ETL jobs**, not general event-driven workflow management.
+- **B.** Running applications on EC2 instances **increases operational overhead**, which goes against the goal of using serverless concepts.
+- **C.** EventBridge is good for **event routing**, but **it doesn't inherently model complex workflows** like Step Functions does. Scheduling is not the primary requirement here.
+
+---
+
+### 🔗 References:
+- [AWS Step Functions Documentation](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)  
+- [AWS Lambda Overview](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)  
