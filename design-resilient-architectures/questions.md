@@ -46,8 +46,7 @@ A solutions architect needs to implement a solution that migrates the data to Am
 ### 🔗 References:
 
 - AWS Docs – [Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-gateway.html)  
-- ExamTopics Discussion:  
-  https://www.examtopics.com/discussions/amazon/view/100220-exam-aws-certified-solutions-architect-associate-saa-c03/
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100220-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
 
@@ -150,3 +149,4 @@ A company is moving its data management application to AWS. The company wants to
 ### 🔗 References:
 - [AWS Step Functions Documentation](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)  
 - [AWS Lambda Overview](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)  
+- [ExamTopics Discussion](https://www.freecram.net/question/Amazon.AWS-Solutions-Associate.v2023-10-17.q198/a-company-is-moving-its-data-management-application-to-aws-the-company-wants-to-transition-to-an-event-dr)
