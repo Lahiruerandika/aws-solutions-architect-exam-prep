@@ -121,7 +121,8 @@ A company is moving its data management application to AWS. The company wants to
 
 ---
 
-> 🔘 **Check Answer**
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
 
 ---
 
