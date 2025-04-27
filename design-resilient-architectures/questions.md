@@ -13,8 +13,10 @@ A solutions architect needs to implement a solution that migrates the data to Am
 **D.** Amazon S3 File Gateway
 
 ---
+
 <details>
 <summary><strong>✅ Check Answer</strong></summary>
+
 ---
 
 ### ✅ Correct Answer: **D. Amazon S3 File Gateway**
@@ -50,7 +52,6 @@ A solutions architect needs to implement a solution that migrates the data to Am
 </details>
 
 ## Question #: 02
-### Topic #: 1 - Design Resilient Architectures
 
 **Question:**  
 A company hosts a three-tier web application on Amazon EC2 instances in a single Availability Zone. The web application uses a self-managed MySQL database that is hosted on an EC2 instance to store data in an Amazon Elastic Block Store (Amazon EBS) volume. The MySQL database currently uses a 1 TB Provisioned IOPS SSD (io2) EBS volume. The company expects traffic of 1,000 IOPS for both reads and writes at peak traffic.
@@ -106,8 +107,7 @@ The company wants to minimize any disruptions, stabilize performance, and reduce
 
 </details>
 
-## Question #: 22  
-### Topic #: 2 - Design Resilient Architectures
+## Question #: 03
 
 **Question:**  
 A company is moving its data management application to AWS. The company wants to transition to an event-driven architecture. The architecture needs to be more distributed and to use serverless concepts while performing the different aspects of the workflow. The company also wants to minimize operational overhead.
