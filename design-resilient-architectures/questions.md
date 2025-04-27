@@ -149,4 +149,4 @@ A company is moving its data management application to AWS. The company wants to
 ### 🔗 References:
 - [AWS Step Functions Documentation](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)  
 - [AWS Lambda Overview](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)  
-- [ExamTopics Discussion](https://www.freecram.net/question/Amazon.AWS-Solutions-Associate.v2023-10-17.q198/a-company-is-moving-its-data-management-application-to-aws-the-company-wants-to-transition-to-an-event-dr)
+- [FreeCram Discussion](https://www.freecram.net/question/Amazon.AWS-Solutions-Associate.v2023-10-17.q198/a-company-is-moving-its-data-management-application-to-aws-the-company-wants-to-transition-to-an-event-dr)
