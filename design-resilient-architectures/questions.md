@@ -151,6 +151,8 @@ A company is moving its data management application to AWS. The company wants to
 - [AWS Lambda Overview](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)  
 - [FreeCram Discussion](https://www.freecram.net/question/Amazon.AWS-Solutions-Associate.v2023-10-17.q198/a-company-is-moving-its-data-management-application-to-aws-the-company-wants-to-transition-to-an-event-dr)
 
+</details>
+
 ## Question #: 04  
 
 **Question:**  
