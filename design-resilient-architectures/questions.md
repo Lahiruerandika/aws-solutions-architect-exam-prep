@@ -162,3 +162,30 @@ A company hosts a multiplayer gaming application on AWS. The company wants the a
 **B.** Store the data directly in an Amazon S3 bucket. Implement an S3 Lifecycle policy to move older data to S3 Glacier Deep Archive for long-term storage. Run one-time queries on the data in Amazon S3 by using Amazon Athena.  
 **C.** Use Amazon DynamoDB with DynamoDB Accelerator (DAX) for data that is frequently accessed. Export the data to an Amazon S3 bucket by using DynamoDB table export. Run one-time queries on the data in Amazon S3 by using Amazon Athena.  
 **D.** Use Amazon DynamoDB for data that is frequently accessed. Turn on streaming to Amazon Kinesis Data Streams. Use Amazon Kinesis Data Firehose to read the data from Kinesis Data Streams. Store the records in an Amazon S3 bucket.
+
+
+### ✅ Correct Answer:  
+**C. Use Amazon DynamoDB with DynamoDB Accelerator (DAX) for data that is frequently accessed. Export the data to an Amazon S3 bucket by using DynamoDB table export. Run one-time queries on the data in Amazon S3 by using Amazon Athena.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why C is Correct:
+- **DynamoDB with DAX** provides **sub-millisecond read performance**, ideal for real-time gaming applications.
+- **DynamoDB table export to Amazon S3** is a **serverless, no-code** feature that allows you to export table data directly into S3 without affecting performance.
+- **Amazon Athena** allows **serverless querying** of data stored in S3 using standard SQL, perfect for **one-time or ad-hoc historical queries**.
+- This setup has **minimal operational overhead** because all components (DAX, table export, Athena) are managed by AWS.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** RDS can introduce higher latency than DynamoDB+DAX and requires **custom scripting** for exporting data — more operational overhead.
+- **B.** S3 alone does not provide **sub-millisecond** read latency. It's suitable for historical querying but not real-time game interactions.
+- **D.** Using Kinesis Data Streams and Firehose adds **more moving parts** and **increases operational complexity**, not ideal for "least operational overhead."
+
+---
+
+### 🔗 References:
+- [DynamoDB Accelerator (DAX)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html)  
+- [DynamoDB Table Export to S3](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataExport.html)  
+- [Amazon Athena Overview](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)  
