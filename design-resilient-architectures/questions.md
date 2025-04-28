@@ -195,3 +195,5 @@ A company hosts a multiplayer gaming application on AWS. The company wants the a
 - [DynamoDB Accelerator (DAX)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html)  
 - [DynamoDB Table Export to S3](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DataExport.html)  
 - [Amazon Athena Overview](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)  
+
+</details>
