@@ -152,7 +152,6 @@ A company is moving its data management application to AWS. The company wants to
 - [FreeCram Discussion](https://www.freecram.net/question/Amazon.AWS-Solutions-Associate.v2023-10-17.q198/a-company-is-moving-its-data-management-application-to-aws-the-company-wants-to-transition-to-an-event-dr)
 
 ## Question #: 04  
-### Topic #: 2 - Design Resilient Architectures
 
 **Question:**  
 A company hosts a multiplayer gaming application on AWS. The company wants the application to read data with sub-millisecond latency and run one-time queries on historical data.
