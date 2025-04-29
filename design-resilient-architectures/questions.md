@@ -272,3 +272,27 @@ A company is building a game system that needs to send unique events to separate
 <summary><strong>✅ Check Answer</strong></summary>
 
 ---
+
+### ✅ Correct Answer:  
+**B.** Amazon Simple Notification Service (Amazon SNS) FIFO topics
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why B is Correct:
+- **Amazon SNS FIFO topics** are specifically designed to **support ordered message delivery** to multiple subscribers.
+- They allow you to **fan out messages concurrently** to different services (like leaderboard, matchmaking, and authentication) **while preserving the order** of events.
+- This makes them ideal for **event-driven architectures** that need **guaranteed ordering across multiple services**.
+
+---
+
+#### 🚫 Why the other options are incorrect:
+
+- **A. Amazon EventBridge**: EventBridge does **not guarantee order** of events. It's useful for loosely coupled services but not for use cases requiring ordered delivery.
+  
+- **C. SNS standard topics**: Standard topics provide **best-effort ordering** but do **not guarantee message order**.
+
+- **D. SQS FIFO queues**: FIFO queues **preserve order** but do **not support fan-out** (i.e., they send to one consumer group). They are more suitable for point-to-point messaging, not multi-subscriber systems.
+
+---
