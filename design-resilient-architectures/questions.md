@@ -201,7 +201,6 @@ A company hosts a multiplayer gaming application on AWS. The company wants the a
 </details>
 
 ## Question #: 05
-### Topic #: 2 - Design Resilient Architectures
 
 **Question:**  
 A company uses a payment processing system that requires messages for a particular payment ID to be received in the same order that they were sent. Otherwise, the payments might be processed incorrectly.
