@@ -212,3 +212,40 @@ A company uses a payment processing system that requires messages for a particul
 **C.** Write the messages to an Amazon ElastiCache for Memcached cluster with the payment ID as the key.  
 **D.** Write the messages to an Amazon Simple Queue Service (Amazon SQS) queue. Set the message attribute to use the payment ID.  
 **E.** Write the messages to an Amazon Simple Queue Service (Amazon SQS) FIFO queue. Set the message group to use the payment ID.
+
+---
+
+> 🔘 **Check Answer**
+
+---
+
+### ✅ Correct Answers:  
+**B.** Write the messages to an Amazon Kinesis data stream with the payment ID as the partition key.  
+**E.** Write the messages to an Amazon Simple Queue Service (Amazon SQS) FIFO queue. Set the message group to use the payment ID.
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why B is Correct:
+- **Amazon Kinesis Data Streams** can guarantee **ordered message delivery** within a **shard**.
+- Using the **payment ID as the partition key** ensures that all messages with the same key go to the same shard, preserving order.
+
+#### ✅ Why E is Correct:
+- **Amazon SQS FIFO (First-In-First-Out)** queues are specifically designed to **guarantee message order**.
+- Using the **message group ID** set to the **payment ID** ensures that messages are processed in the exact order for that payment.
+
+---
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** DynamoDB does not preserve the order in which items are written.
+- **C.** ElastiCache (especially Memcached) is not a messaging or queuing system and does not maintain order.
+- **D.** Standard SQS queues do **not guarantee ordering**. Message attributes alone do not enforce processing order.
+
+---
+
+### 🔗 References:
+- [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)  
+- [Amazon SQS FIFO Queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html)  
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100300-exam-aws-certified-solutions-architect-associate-saa-c03/)
