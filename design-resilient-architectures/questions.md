@@ -265,3 +265,10 @@ A company is building a game system that needs to send unique events to separate
 **B.** Amazon Simple Notification Service (Amazon SNS) FIFO topics  
 **C.** Amazon Simple Notification Service (Amazon SNS) standard topics  
 **D.** Amazon Simple Queue Service (Amazon SQS) FIFO queues  
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
