@@ -215,7 +215,8 @@ A company uses a payment processing system that requires messages for a particul
 
 ---
 
-> 🔘 **Check Answer**
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
 
 ---
 
@@ -249,3 +250,5 @@ A company uses a payment processing system that requires messages for a particul
 - [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)  
 - [Amazon SQS FIFO Queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html)  
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102121-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
+</details>
