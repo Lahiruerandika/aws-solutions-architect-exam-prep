@@ -252,3 +252,16 @@ A company uses a payment processing system that requires messages for a particul
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102121-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
+
+## Question #: 06  
+### Topic #: 1 - Design Resilient Architectures
+
+**Question:**  
+A company is building a game system that needs to send unique events to separate leaderboard, matchmaking, and authentication services concurrently. The company needs an AWS event-driven system that guarantees the order of the events.
+
+**Which solution will meet these requirements?**
+
+**A.** Amazon EventBridge event bus  
+**B.** Amazon Simple Notification Service (Amazon SNS) FIFO topics  
+**C.** Amazon Simple Notification Service (Amazon SNS) standard topics  
+**D.** Amazon Simple Queue Service (Amazon SQS) FIFO queues  
