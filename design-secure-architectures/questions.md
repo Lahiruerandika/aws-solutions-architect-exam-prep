@@ -318,6 +318,5 @@ A solutions architect is reviewing the infrastructure design. Data must be encry
 - [Amazon SQS Encryption](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-server-side-encryption.html)  
 - [Amazon SNS Encryption](https://docs.aws.amazon.com/sns/latest/dg/sns-server-side-encryption.html)  
 - [Using AWS KMS Key Policies](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html)  
-- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100300-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
