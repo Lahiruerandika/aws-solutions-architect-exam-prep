@@ -270,6 +270,8 @@ A company wants to restrict access to the content of one of its main web applica
 </details>
 
 
+## Question #: 06
+
 **Question:**  
 A hospital is designing a new application that gathers symptoms from patients. The hospital has decided to use Amazon Simple Queue Service (Amazon SQS) and Amazon Simple Notification Service (Amazon SNS) in the architecture.
 
