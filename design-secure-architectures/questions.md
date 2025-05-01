@@ -268,3 +268,54 @@ A company wants to restrict access to the content of one of its main web applica
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100341-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
+
+
+**Question:**  
+A hospital is designing a new application that gathers symptoms from patients. The hospital has decided to use Amazon Simple Queue Service (Amazon SQS) and Amazon Simple Notification Service (Amazon SNS) in the architecture.
+
+A solutions architect is reviewing the infrastructure design. Data must be encrypted at rest and in transit. Only authorized personnel of the hospital should be able to access the data.
+
+**Which combination of steps should the solutions architect take to meet these requirements? (Choose two.)**
+
+**A.** Turn on server-side encryption on the SQS components. Update the default key policy to restrict key usage to a set of authorized principals.  
+**B.** Turn on server-side encryption on the SNS components by using an AWS Key Management Service (AWS KMS) customer managed key. Apply a key policy to restrict key usage to a set of authorized principals.  
+**C.** Turn on encryption on the SNS components. Update the default key policy to restrict key usage to a set of authorized principals. Set a condition in the topic policy to allow only encrypted connections over TLS.  
+**D.** Turn on server-side encryption on the SQS components by using an AWS Key Management Service (AWS KMS) customer managed key. Apply a key policy to restrict key usage to a set of authorized principals. Set a condition in the queue policy to allow only encrypted connections over TLS.  
+**E.** Turn on server-side encryption on the SQS components by using an AWS Key Management Service (AWS KMS) customer managed key. Apply an IAM policy to restrict key usage to a set of authorized principals. Set a condition in the queue policy to allow only encrypted connections over TLS.
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B.** Turn on server-side encryption on the SNS components by using an AWS Key Management Service (AWS KMS) customer managed key. Apply a key policy to restrict key usage to a set of authorized principals.  
+**D.** Turn on server-side encryption on the SQS components by using an AWS Key Management Service (AWS KMS) customer managed key. Apply a key policy to restrict key usage to a set of authorized principals. Set a condition in the queue policy to allow only encrypted connections over TLS.
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why B and D are Correct:
+- **Server-side encryption using KMS** allows control of key usage and management, fulfilling compliance needs.
+- **Applying key policies** restricts decryption access to only **authorized personnel**.
+- **Setting TLS-only policies** ensures encryption **in transit**.
+- This approach meets the requirements for **data encryption at rest and in transit** and restricts access based on hospital roles.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Uses the **default key policy**, which may not sufficiently restrict access to authorized personnel.
+- **C.** Only updates **default key policy** and sets TLS condition but doesn’t enforce use of **customer managed KMS key**, which is required.
+- **E.** IAM policies can help restrict actions, but **key policies** are the **preferred method** for fine-grained control over KMS keys.
+
+---
+
+### 🔗 References:
+- [Amazon SQS Encryption](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-server-side-encryption.html)  
+- [Amazon SNS Encryption](https://docs.aws.amazon.com/sns/latest/dg/sns-server-side-encryption.html)  
+- [Using AWS KMS Key Policies](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html)  
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100300-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
+</details>
