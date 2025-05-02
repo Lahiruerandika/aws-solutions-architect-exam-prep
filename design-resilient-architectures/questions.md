@@ -254,7 +254,6 @@ A company uses a payment processing system that requires messages for a particul
 </details>
 
 ## Question #: 06  
-### Topic #: 1 - Design Resilient Architectures
 
 **Question:**  
 A company is building a game system that needs to send unique events to separate leaderboard, matchmaking, and authentication services concurrently. The company needs an AWS event-driven system that guarantees the order of the events.
@@ -303,3 +302,15 @@ A company is building a game system that needs to send unique events to separate
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102124-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
+
+## Question #: 07
+
+**Question:**  
+A company runs a web application that is backed by Amazon RDS. A new database administrator caused data loss by accidentally editing information in a database table. To help recover from this type of incident, the company wants the ability to restore the database to its state from 5 minutes before any change within the last 30 days.
+
+**Which feature should the solutions architect include in the design to meet this requirement?**
+
+**A.** Read replicas  
+**B.** Manual snapshots  
+**C.** Automated backups  
+**D.** Multi-AZ deployments  
