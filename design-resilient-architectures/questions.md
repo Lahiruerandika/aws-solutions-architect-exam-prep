@@ -301,3 +301,5 @@ A company is building a game system that needs to send unique events to separate
 - [Amazon SNS FIFO Topics](https://docs.aws.amazon.com/sns/latest/dg/fifo-topics.html)  
 - [EventBridge Event Bus](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102124-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
+</details>
