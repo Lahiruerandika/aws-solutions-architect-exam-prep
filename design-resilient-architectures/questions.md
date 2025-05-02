@@ -314,3 +314,30 @@ A company runs a web application that is backed by Amazon RDS. A new database ad
 **B.** Manual snapshots  
 **C.** Automated backups  
 **D.** Multi-AZ deployments  
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. Automated backups**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why C is Correct:
+- **Automated backups** in Amazon RDS support **point-in-time recovery (PITR)**, allowing you to restore your database to **any second within the retention period (up to 35 days)**.
+- This feature backs up the database and transaction logs automatically, enabling recovery to 5 minutes before an unintended change or data loss.
+- It meets the requirement with minimal operational overhead.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Read replicas are designed for **horizontal read scaling**, not data recovery.
+- **B.** Manual snapshots are static and must be initiated manually; they do **not allow point-in-time recovery** unless taken right before the incident.
+- **D.** Multi-AZ deployments provide **high availability**, **not backup** or point-in-time recovery features.
+
+---
