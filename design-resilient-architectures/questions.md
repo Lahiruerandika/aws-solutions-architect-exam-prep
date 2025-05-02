@@ -341,3 +341,10 @@ A company runs a web application that is backed by Amazon RDS. A new database ad
 - **D.** Multi-AZ deployments provide **high availability**, **not backup** or point-in-time recovery features.
 
 ---
+
+### 🔗 References:
+- [RDS Automated Backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html)  
+- [Point-in-time Recovery](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIT.html)  
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/60048-exam-aws-certified-solutions-architect-associate-saa-c02/)
+
+</details>
