@@ -360,3 +360,11 @@ A company’s web application consists of an Amazon API Gateway API in front of 
 - **D.** API usage plans and API keys are suitable for **rate limiting** and quota management but are **not secure for access control** since API keys can be shared or leaked.
 
 ---
+
+### 🔗 References:
+- [DynamoDB Fine-Grained Access Control](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/specifying-conditions.html)
+- [Using Amazon Cognito for Authentication and Authorization](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html)
+- [AWS IAM Policy Conditions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100355-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
+</details>
