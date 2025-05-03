@@ -395,5 +395,6 @@ A company is using Amazon Route 53 latency-based routing to route requests to it
 - [Global Accelerator and On-premises Endpoints](https://docs.aws.amazon.com/global-accelerator/latest/dg/introduction-how-it-works-endpoints.html)  
 - [Global Accelerator vs Route 53](https://docs.aws.amazon.com/global-accelerator/latest/dg/introduction-how-global-accelerator-differs.html)  
 - [Network Load Balancer UDP Support](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/51508-exam-aws-certified-solutions-architect-associate-saa-c02/)
 
 </details>
