@@ -349,6 +349,8 @@ A company runs a web application that is backed by Amazon RDS. A new database ad
 
 </details>
 
+## Question #: 08
+
 **Question:**  
 A company is using Amazon Route 53 latency-based routing to route requests to its UDP-based application for users around the world. The application is hosted on redundant servers in the company’s on-premises data centers in the United States, Asia, and Europe. The company’s compliance requirements state that the application must be hosted on premises. The company wants to improve the performance and availability of the application.
 
