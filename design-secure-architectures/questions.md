@@ -333,3 +333,30 @@ A company’s web application consists of an Amazon API Gateway API in front of 
 **B.** Set up AWS WAF on the API Gateway API. Create a rule to filter users who have a subscription.  
 **C.** Apply fine-grained IAM permissions to the premium content in the DynamoDB table.  
 **D.** Implement API usage plans and API keys to limit the access of users who do not have a subscription.
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**C. Apply fine-grained IAM permissions to the premium content in the DynamoDB table.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why C is Correct:
+- Since **Amazon Cognito** is already being used to authenticate users, you can integrate **Cognito identity pools** with **IAM roles** to manage user permissions.
+- You can implement **fine-grained access control** in DynamoDB using IAM policies that restrict or allow actions based on **user attributes** (e.g., subscription status).
+- This approach is **scalable**, **serverless**, and has **low operational overhead** because it's managed through existing AWS services without additional components.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** API caching and throttling improve performance and prevent abuse but do **not restrict access** based on subscription.
+- **B.** AWS WAF is used for IP-based filtering and blocking malicious patterns—not for **user identity-based access control**.
+- **D.** API usage plans and API keys are suitable for **rate limiting** and quota management but are **not secure for access control** since API keys can be shared or leaked.
+
+---
