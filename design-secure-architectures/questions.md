@@ -322,6 +322,8 @@ A solutions architect is reviewing the infrastructure design. Data must be encry
 </details>
 
 
+## Question #: 07
+
 **Question:**  
 A company’s web application consists of an Amazon API Gateway API in front of an AWS Lambda function and an Amazon DynamoDB database. The Lambda function handles the business logic, and the DynamoDB table hosts the data. The application uses Amazon Cognito user pools to identify the individual users of the application. A solutions architect needs to update the application so that only users who have a subscription can access premium content.
 
