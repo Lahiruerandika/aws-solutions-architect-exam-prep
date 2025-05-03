@@ -270,7 +270,7 @@ A company wants to restrict access to the content of one of its main web applica
 </details>
 
 
-## Question #: 06
+## Question #: 07
 
 **Question:**  
 A hospital is designing a new application that gathers symptoms from patients. The hospital has decided to use Amazon Simple Queue Service (Amazon SQS) and Amazon Simple Notification Service (Amazon SNS) in the architecture.
@@ -322,7 +322,7 @@ A solutions architect is reviewing the infrastructure design. Data must be encry
 </details>
 
 
-## Question #: 07
+## Question #: 08
 
 **Question:**  
 A company’s web application consists of an Amazon API Gateway API in front of an AWS Lambda function and an Amazon DynamoDB database. The Lambda function handles the business logic, and the DynamoDB table hosts the data. The application uses Amazon Cognito user pools to identify the individual users of the application. A solutions architect needs to update the application so that only users who have a subscription can access premium content.
