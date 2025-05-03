@@ -342,29 +342,30 @@ A company’s web application consists of an Amazon API Gateway API in front of 
 ---
 
 ### ✅ Correct Answer:  
-**C. Apply fine-grained IAM permissions to the premium content in the DynamoDB table.**
+**D. Implement API usage plans and API keys to limit the access of users who do not have a subscription.**
 
 ---
 
 ### 📘 Explanation:
 
-#### ✅ Why C is Correct:
-- Since **Amazon Cognito** is already being used to authenticate users, you can integrate **Cognito identity pools** with **IAM roles** to manage user permissions.
-- You can implement **fine-grained access control** in DynamoDB using IAM policies that restrict or allow actions based on **user attributes** (e.g., subscription status).
-- This approach is **scalable**, **serverless**, and has **low operational overhead** because it's managed through existing AWS services without additional components.
+#### ✅ Why D is Correct:
+- API Gateway **usage plans and API keys** allow control over API access by associating users with specific plans.
+- Ideal for separating **subscription tiers** like free and premium users.
+- It is **cost-effective** and **requires minimal operational overhead** to manage.
+- API keys can be distributed to Cognito-authenticated users based on subscription status.
 
 #### 🚫 Why the other options are incorrect:
 
-- **A.** API caching and throttling improve performance and prevent abuse but do **not restrict access** based on subscription.
-- **B.** AWS WAF is used for IP-based filtering and blocking malicious patterns—not for **user identity-based access control**.
-- **D.** API usage plans and API keys are suitable for **rate limiting** and quota management but are **not secure for access control** since API keys can be shared or leaked.
+- **A.** API caching and throttling enhance performance and limit traffic but **do not control access** based on subscription.
+- **B.** AWS WAF is great for filtering **IP-based or pattern-based threats**, but not for **subscription-based user access control**.
+- **C.** Fine-grained IAM is powerful but **adds complexity** and is not well-suited for **rapidly changing user subscription statuses**.
 
 ---
 
 ### 🔗 References:
-- [DynamoDB Fine-Grained Access Control](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/specifying-conditions.html)
-- [Using Amazon Cognito for Authentication and Authorization](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html)
-- [AWS IAM Policy Conditions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html)
-- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/100355-exam-aws-certified-solutions-architect-associate-saa-c03/)
+- [API Gateway Usage Plans and API Keys](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-usage-plans.html)  
+- [Amazon Cognito Overview](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)  
+- [AWS Lambda + API Gateway Patterns](https://docs.aws.amazon.com/lambda/latest/dg/services-apigateway.html)  
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102128-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
