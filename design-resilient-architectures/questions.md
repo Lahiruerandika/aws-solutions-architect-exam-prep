@@ -367,3 +367,33 @@ A company is using Amazon Route 53 latency-based routing to route requests to it
 <summary><strong>✅ Check Answer</strong></summary>
 
 ---
+
+### ✅ Correct Answer:  
+**A. Configure three Network Load Balancers (NLBs) in the three AWS Regions to address the on-premises endpoints. Create an accelerator by using AWS Global Accelerator, and register the NLBs as its endpoints. Provide access to the application by using a CNAME that points to the accelerator DNS.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why A is Correct:
+- The application is **UDP-based**, and **Network Load Balancers (NLBs)** are the only AWS load balancers that support **UDP**.
+- **AWS Global Accelerator** enhances **performance and availability** globally, while supporting **UDP traffic** and routing to **on-premises resources** via NLBs.
+- This approach ensures the application remains **on-premises** (meeting compliance) while improving **global latency and fault tolerance**.
+- Global Accelerator automatically routes user requests to the **nearest and healthiest endpoint**.
+
+---
+
+#### 🚫 Why the other options are incorrect:
+
+- **B.** ALBs **do not support UDP**; they only work with **HTTP and HTTPS**, making this option invalid.
+- **C.** CloudFront **does not support UDP** and is intended for **HTTP/HTTPS content delivery**.
+- **D.** Same limitations as B and C — **ALBs and CloudFront** are not suitable for **UDP-based** workloads.
+
+---
+
+### 🔗 References:
+- [Global Accelerator and On-premises Endpoints](https://docs.aws.amazon.com/global-accelerator/latest/dg/introduction-how-it-works-endpoints.html)  
+- [Global Accelerator vs Route 53](https://docs.aws.amazon.com/global-accelerator/latest/dg/introduction-how-global-accelerator-differs.html)  
+- [Network Load Balancer UDP Support](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html)
+
+</details>
