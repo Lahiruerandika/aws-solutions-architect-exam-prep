@@ -362,3 +362,8 @@ A company is using Amazon Route 53 latency-based routing to route requests to it
 **D.** Configure three Application Load Balancers (ALBs) in the three AWS Regions to address the on-premises endpoints. In Route 53, create a latency-based record that points to the three ALBs, and use it as an origin for an Amazon CloudFront distribution. Provide access to the application by using a CNAME that points to the CloudFront DNS.
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
