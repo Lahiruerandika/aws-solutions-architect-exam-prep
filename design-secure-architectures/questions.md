@@ -369,3 +369,15 @@ A company’s web application consists of an Amazon API Gateway API in front of 
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102128-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
+
+## Question #: 09
+
+**Question:**  
+A solutions architect wants all new users to have specific complexity requirements and mandatory rotation periods for IAM user passwords.
+
+**What should the solutions architect do to accomplish this?**
+
+**A.** Set an overall password policy for the entire AWS account.  
+**B.** Set a password policy for each IAM user in the AWS account.  
+**C.** Use third-party vendor software to set password requirements.  
+**D.** Attach an Amazon CloudWatch rule to the Create_newuser event to set the password with the appropriate requirements.
