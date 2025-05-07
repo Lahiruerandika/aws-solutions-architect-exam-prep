@@ -405,5 +405,6 @@ A solutions architect wants all new users to have specific complexity requiremen
 ### 🔗 References:
 - [IAM Password Policy Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html)  
 - [AWS Best Practices for IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/46408-exam-aws-certified-solutions-architect-associate-saa-c02/)
 
 </details>
