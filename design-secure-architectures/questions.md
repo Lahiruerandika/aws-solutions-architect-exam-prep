@@ -384,6 +384,15 @@ A solutions architect wants all new users to have specific complexity requiremen
 
 ---
 
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. Set an overall password policy for the entire AWS account.**
 ### 📘 Explanation:
 
 #### ✅ Why A is Correct:
