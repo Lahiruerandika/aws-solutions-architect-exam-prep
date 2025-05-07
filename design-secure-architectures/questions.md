@@ -381,3 +381,23 @@ A solutions architect wants all new users to have specific complexity requiremen
 **B.** Set a password policy for each IAM user in the AWS account.  
 **C.** Use third-party vendor software to set password requirements.  
 **D.** Attach an Amazon CloudWatch rule to the Create_newuser event to set the password with the appropriate requirements.
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why A is Correct:
+- AWS IAM provides the ability to define a **global password policy** that applies to **all IAM users** in the AWS account.
+- The policy supports settings such as:
+  - Minimum password length
+  - Required character types (uppercase, lowercase, numbers, symbols)
+  - Password expiration (rotation)
+  - Preventing password reuse
+- This ensures **consistent and enforced security standards** across all users.
+
+#### 🚫 Why the other options are incorrect:
+- **B.** AWS IAM does not support **per-user password policies**. It can only be set at the account level.
+- **C.** Using third-party software adds complexity and is unnecessary since IAM already supports this functionality.
+- **D.** CloudWatch cannot automatically enforce or apply IAM password policies through events like `CreateUser`.
+
+---
