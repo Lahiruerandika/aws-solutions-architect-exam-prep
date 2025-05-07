@@ -401,3 +401,9 @@ A solutions architect wants all new users to have specific complexity requiremen
 - **D.** CloudWatch cannot automatically enforce or apply IAM password policies through events like `CreateUser`.
 
 ---
+
+### 🔗 References:
+- [IAM Password Policy Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html)  
+- [AWS Best Practices for IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+
+</details>
