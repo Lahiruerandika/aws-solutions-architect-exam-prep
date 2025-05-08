@@ -443,5 +443,6 @@ A company has migrated an application to Amazon EC2 Linux instances. One of thes
 - [AWS Batch Documentation](https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html)  
 - [EventBridge Scheduler](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-scheduler.html)  
 - [AWS Compute Options](https://aws.amazon.com/products/compute/)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/84704-exam-aws-certified-solutions-architect-associate-saa-c02/)
 
 </details>
