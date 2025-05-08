@@ -438,3 +438,10 @@ A company has migrated an application to Amazon EC2 Linux instances. One of thes
 - **D.** Launching EC2 instances using AMIs with Auto Scaling **adds complexity and overhead**, and doesn’t solve the task-specific scaling issue.
 
 ---
+
+### 🔗 References:
+- [AWS Batch Documentation](https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html)  
+- [EventBridge Scheduler](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-scheduler.html)  
+- [AWS Compute Options](https://aws.amazon.com/products/compute/)
+
+</details>
