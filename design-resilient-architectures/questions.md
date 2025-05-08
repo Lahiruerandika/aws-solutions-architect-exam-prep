@@ -412,3 +412,29 @@ A company has migrated an application to Amazon EC2 Linux instances. One of thes
 **D.** Create an Amazon Machine Image (AMI) of the EC2 instance that runs the tasks. Create an Auto Scaling group with the AMI to run multiple copies of the instance.
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. Use AWS Batch to run the tasks as jobs. Schedule the jobs by using Amazon EventBridge (Amazon CloudWatch Events).**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why A is Correct:
+- **AWS Batch** enables running jobs with diverse language dependencies across managed compute environments.
+- It’s ideal for **long-running** and **scheduled tasks** with **different runtimes or languages**.
+- **EventBridge** can handle cron-like scheduling without needing any infrastructure management.
+- **Minimal operational overhead**, highly scalable, and fully managed.
+
+#### 🚫 Why the other options are incorrect:
+
+- **B.** AWS App Runner is not designed for scheduled batch tasks—it's primarily for **web services and APIs**.
+- **C.** Lambda is limited to **15 minutes per invocation**, so it cannot handle **1-hour tasks**.
+- **D.** Launching EC2 instances using AMIs with Auto Scaling **adds complexity and overhead**, and doesn’t solve the task-specific scaling issue.
+
+---
