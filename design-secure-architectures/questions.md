@@ -436,3 +436,13 @@ A company runs a public three-tier web application in a VPC. The application run
 <summary><strong>✅ Check Answer</strong></summary>  
 
 ---
+
+### ✅ Correct Answer:  
+**C. Provision a NAT gateway in a public subnet. Modify each private subnet’s route table with a default route that points to the NAT gateway.**
+
+---
+
+### 📘 Topic:  
+**Designing Secure Applications and Architectures**
+
+---
