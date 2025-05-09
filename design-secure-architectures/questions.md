@@ -431,3 +431,8 @@ A company runs a public three-tier web application in a VPC. The application run
 **D.** Provision a NAT gateway in a private subnet. Modify each private subnet’s route table with a default route that points to the NAT gateway.  
 
 ---
+
+<details>  
+<summary><strong>✅ Check Answer</strong></summary>  
+
+---
