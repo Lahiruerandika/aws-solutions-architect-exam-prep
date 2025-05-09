@@ -466,5 +466,6 @@ A company runs a public three-tier web application in a VPC. The application run
 
 - [AWS NAT Gateway Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)  
 - [Amazon VPC Routing Basics](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/46408-exam-aws-certified-solutions-architect-associate-saa-c02/)
 
 </details>
