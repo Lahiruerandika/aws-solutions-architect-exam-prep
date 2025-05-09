@@ -446,3 +446,25 @@ A company runs a public three-tier web application in a VPC. The application run
 **Designing Secure Applications and Architectures**
 
 ---
+
+### 🧠 Explanation:
+
+- **NAT Gateway** is the **managed solution** that allows **instances in a private subnet to access the internet**, without allowing inbound traffic from the internet. It requires minimal operational maintenance compared to NAT instances.
+- **NAT Gateway must be in a public subnet** because it needs direct access to the internet through an internet gateway.
+- **Private subnets** route internet-bound traffic to the NAT Gateway.
+
+---
+
+### 🚫 Why the other options are incorrect:
+
+- **A.** NAT instances are not managed services and require patching and monitoring — higher operational overhead.
+- **B & D.** NAT instances/gateways in **private subnets won't work** because they cannot reach the internet directly.
+
+---
+
+### 🔗 References:
+
+- [AWS NAT Gateway Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)  
+- [Amazon VPC Routing Basics](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)
+
+</details>
