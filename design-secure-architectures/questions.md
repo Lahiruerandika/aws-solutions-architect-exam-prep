@@ -517,3 +517,11 @@ A company needs to create an Amazon Elastic Kubernetes Service (Amazon EKS) clus
 
 ---
 
+### 🔗 References:
+- [Amazon EBS Encryption by Default](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
+- [EKS Worker Node IAM Role Permissions](https://docs.aws.amazon.com/eks/latest/userguide/create-node-role.html)
+- [Using KMS with EBS](https://docs.aws.amazon.com/kms/latest/developerguide/services-ebs.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102135-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
+
+</details>
