@@ -482,3 +482,38 @@ A company needs to create an Amazon Elastic Kubernetes Service (Amazon EKS) clus
 **C.** Enable EBS encryption by default in the AWS Region where the EKS cluster will be created. Select the customer managed key as the default key.  
 **D.** Create the EKS cluster. Create an IAM role that has a policy that grants permission to the customer managed key. Associate the role with the EKS cluster.  
 **E.** Store the customer managed key as a Kubernetes secret in the EKS cluster. Use the customer managed key to encrypt the EBS volumes.
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answers:
+**C. Enable EBS encryption by default in the AWS Region where the EKS cluster will be created. Select the customer managed key as the default key.**  
+**D. Create the EKS cluster. Create an IAM role that has a policy that grants permission to the customer managed key. Associate the role with the EKS cluster.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why C is Correct:
+- AWS allows you to **set a default KMS key for EBS encryption** in a Region.
+- Any EBS volume created after this setting—including those by EKS—will be **automatically encrypted** with the specified **customer managed key**.
+- This removes the need to handle encryption manually, reducing operational overhead.
+
+#### ✅ Why D is Correct:
+- To allow EKS-managed nodes (EC2 instances) to use the customer managed KMS key, you must **grant them IAM permissions**.
+- You do this by **attaching a policy** that includes `kms:Encrypt`, `kms:Decrypt`, etc., to the IAM role associated with the EKS node group.
+
+---
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Involves using a Kubernetes plugin for encryption, which adds **complexity** and increases operational overhead.
+- **B.** You **cannot encrypt an existing unencrypted EBS volume**. You must copy it to a new volume, which increases effort.
+- **E.** Storing KMS keys as Kubernetes secrets is insecure and **not recommended by AWS**.
+
+---
+
