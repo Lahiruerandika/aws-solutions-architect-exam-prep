@@ -414,5 +414,6 @@ When a natural disaster occurs, tens of thousands of images get updated every fe
 - [Amazon DynamoDB Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)  
 - [Amazon S3 Overview](https://docs.aws.amazon.com/s3/index.html)  
 - [DynamoDB vs RDS](https://aws.amazon.com/nosql/dynamodb-vs-rds/)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102136-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
