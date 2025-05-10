@@ -383,3 +383,29 @@ When a natural disaster occurs, tens of thousands of images get updated every fe
 **D.** Store the images in Amazon S3 buckets. Store geographic codes and image S3 URLs in a database table. Use Oracle running on an Amazon RDS Multi-AZ DB instance.
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. Store the images in Amazon S3 buckets. Use Amazon DynamoDB with the geographic code as the key and the image S3 URL as the value.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why B is Correct:
+- **Amazon S3** provides **cost-effective, durable, and scalable** storage for large image files.
+- **Amazon DynamoDB** is **highly scalable**, serverless, and supports **rapid updates** during high-throughput scenarios such as disaster events.
+- Storing **S3 URLs** in DynamoDB reduces data duplication and keeps image metadata easily accessible.
+- This solution is **fully managed**, cost-effective, and **highly available**.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Using Oracle on RDS Multi-AZ is expensive and does not scale well for massive, frequent image updates.
+- **C.** Storing large binary objects (images) directly in DynamoDB is not recommended due to cost and performance concerns.
+- **D.** Oracle on RDS still brings operational overhead and doesn't scale or cost-optimize as well as DynamoDB + S3.
+
+---
