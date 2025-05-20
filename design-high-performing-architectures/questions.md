@@ -410,3 +410,5 @@ When a natural disaster occurs, tens of thousands of images get updated every fe
 
 ---
 
+### 🔗 References:
+- [Amazon DynamoDB Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)  
