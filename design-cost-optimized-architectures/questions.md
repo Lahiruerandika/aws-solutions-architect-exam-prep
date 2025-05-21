@@ -212,5 +212,6 @@ Four times each year, the company uses the data from the previous 12 months to p
 ### 🔗 References:
 - [Amazon S3 Storage Classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html)  
 - [S3 Lifecycle Configuration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-configuration-examples.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102137-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
