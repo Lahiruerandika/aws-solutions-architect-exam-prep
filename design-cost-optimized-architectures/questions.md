@@ -193,3 +193,24 @@ Four times each year, the company uses the data from the previous 12 months to p
 **D. Use the S3 Standard storage class. Create an S3 Lifecycle policy to transition objects to S3 Standard-Infrequent Access (S3 Standard-IA) after 30 days, and then to S3 Glacier Deep Archive after 1 year.**
 
 ---
+
+### 📘 Explanation:
+
+#### ✅ Why D is Correct:
+- **S3 Standard** supports frequent access in the first 30 days (daily ML training).
+- **S3 Standard-IA** is ideal after 30 days (quarterly model training).
+- **S3 Glacier Deep Archive** provides the **lowest-cost** long-term archival storage.
+- Lifecycle policies **automate transitions** with minimal operational overhead.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A & B:** S3 Intelligent-Tiering incurs **monitoring charges**, which is unnecessary here since the access pattern is **predictable**.
+- **C:** Using S3 Standard-IA from the start doesn't make sense because the data is actively used in the first 30 days.
+
+---
+
+### 🔗 References:
+- [Amazon S3 Storage Classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html)  
+- [S3 Lifecycle Configuration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-configuration-examples.html)
+
+</details>
