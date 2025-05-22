@@ -447,7 +447,9 @@ A company has migrated an application to Amazon EC2 Linux instances. One of thes
 
 </details>
 
-**Question:**  
+## Question #: 10
+
+**Question:**   
 A company is running several business applications in three separate VPCs within the us-east-1 Region. The applications must be able to communicate between VPCs. The applications also must be able to consistently send hundreds of gigabytes of data each day to a latency-sensitive application that runs in a single on-premises data center.
 
 A solutions architect needs to design a network connectivity solution that maximizes cost-effectiveness.
