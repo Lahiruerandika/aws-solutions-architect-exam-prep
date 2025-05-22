@@ -462,3 +462,34 @@ A solutions architect needs to design a network connectivity solution that maxim
 **D.** Set up one AWS Direct Connect connection from the data center to AWS. Create a transit gateway, and attach each VPC to the transit gateway. Establish connectivity between the Direct Connect connection and the transit gateway.  
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. Set up one AWS Direct Connect connection from the data center to AWS. Create a transit gateway, and attach each VPC to the transit gateway. Establish connectivity between the Direct Connect connection and the transit gateway.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why D is Correct:
+- **AWS Direct Connect** provides a **low-latency, high-bandwidth, and reliable** connection suitable for **sending large volumes of data consistently**.
+- A **single Direct Connect connection** is **cost-effective** compared to multiple.
+- **Transit Gateway** allows **centralized VPC-to-VPC and VPC-to-on-premises routing**, reducing management complexity and improving scalability.
+
+#### 🚫 Why the other options are incorrect:
+- **A.** Site-to-Site VPNs are cost-effective but **not ideal for high-throughput or latency-sensitive workloads** due to variability in internet routing.
+- **B.** Launching third-party appliances introduces **more complexity and operational overhead** without added benefit in this case.
+- **C.** Setting up three Direct Connect connections is **unnecessarily expensive** and does not improve performance significantly over a single connection with a Transit Gateway.
+
+---
+
+### 🔗 References:
+- [AWS Direct Connect Overview](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html)  
+- [Transit Gateway with Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-transit-gateways.html)  
+- [VPC Connectivity Options](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-connectivity.html)  
+
+</details>
