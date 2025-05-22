@@ -538,5 +538,6 @@ An ecommerce company is building a distributed application that involves several
 - [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)  
 - [Step Functions Use Cases](https://docs.aws.amazon.com/step-functions/latest/dg/use-cases.html)  
 - [AWS Step Functions and Human Approval](https://aws.amazon.com/blogs/compute/implementing-human-approval-workflows-with-amazon-api-gateway-and-aws-step-functions/)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102139-exam-aws-certified-solutions-architect-associate-saa-c03/) 
 
 </details>
