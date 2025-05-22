@@ -491,6 +491,6 @@ A solutions architect needs to design a network connectivity solution that maxim
 - [AWS Direct Connect Overview](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html)  
 - [Transit Gateway with Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-transit-gateways.html)  
 - [VPC Connectivity Options](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-connectivity.html) 
-- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/84704-exam-aws-certified-solutions-architect-associate-saa-c02/) 
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/67834-exam-aws-certified-solutions-architect-associate-saa-c02/) 
 
 </details>
