@@ -170,7 +170,9 @@ A company stores its data objects in Amazon S3 Standard storage. A solutions arc
 
 </details>
 
-**Question:**  
+## Question #05 
+### Topic #: 4 - Design Cost-Optimized Architectures
+
 A company has an application that collects data from IoT sensors on automobiles. The data is streamed and stored in Amazon S3 through Amazon Kinesis Data Firehose. The data produces trillions of S3 objects each year. Each morning, the company uses the data from the previous 30 days to retrain a suite of machine learning (ML) models.
 
 Four times each year, the company uses the data from the previous 12 months to perform analysis and train other ML models. The data must be available with minimal delay for up to 1 year. After 1 year, the data must be retained for archival purposes.
