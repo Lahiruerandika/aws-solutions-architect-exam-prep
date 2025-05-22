@@ -508,3 +508,35 @@ An ecommerce company is building a distributed application that involves several
 **D.** Use AWS Lambda functions and Amazon EventBridge events to build the application.
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. Use AWS Step Functions to build the application.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why A is Correct:
+- **AWS Step Functions** provides **low-code visual workflows** that can coordinate multiple AWS services, including **Lambda, EC2, on-prem systems, and manual approval steps**.
+- Supports **built-in support for human approval steps** using services like Amazon SNS or custom integrations.
+- Reduces operational overhead by managing state, retries, error handling, and service orchestration **natively and reliably**.
+
+#### 🚫 Why the other options are incorrect:
+
+- **B.** AWS Glue is a data integration service mainly used for **ETL tasks**, not for orchestrating diverse application workflows.
+- **C.** Amazon SQS handles messaging but does **not provide orchestration or human approval flow** capabilities.
+- **D.** Lambda and EventBridge can coordinate some events, but building a full orchestrated workflow, especially with **manual approvals and integration with EC2 or on-prem**, would require **more custom logic and operational management**.
+
+---
+
+### 🔗 References:
+- [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)  
+- [Step Functions Use Cases](https://docs.aws.amazon.com/step-functions/latest/dg/use-cases.html)  
+- [AWS Step Functions and Human Approval](https://aws.amazon.com/blogs/compute/implementing-human-approval-workflows-with-amazon-api-gateway-and-aws-step-functions/)
+
+</details>
