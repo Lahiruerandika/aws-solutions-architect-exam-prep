@@ -525,3 +525,50 @@ A company needs to create an Amazon Elastic Kubernetes Service (Amazon EKS) clus
 
 
 </details>
+
+**Question:**  
+A company has launched an Amazon RDS for MySQL DB instance. Most of the connections to the database come from serverless applications. Application traffic to the database changes significantly at random intervals. At times of high demand, users report that their applications experience database connection rejection errors.
+
+**Which solution will resolve this issue with the LEAST operational overhead?**
+
+**A.** Create a proxy in RDS Proxy. Configure the users’ applications to use the DB instance through RDS Proxy.  
+**B.** Deploy Amazon ElastiCache for Memcached between the users’ applications and the DB instance.  
+**C.** Migrate the DB instance to a different instance class that has higher I/O capacity. Configure the users’ applications to use the new DB instance.  
+**D.** Configure Multi-AZ for the DB instance. Configure the users’ applications to switch between the DB instances.  
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. Create a proxy in RDS Proxy. Configure the users’ applications to use the DB instance through RDS Proxy.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why A is Correct:
+- **Amazon RDS Proxy** is designed to handle **large numbers of unpredictable and spiky database connections**, which is common in **serverless architectures**.
+- It **pools and manages connections** efficiently, **reducing connection storms** and **minimizing database load**.
+- RDS Proxy **improves application scalability and availability** without needing to manage additional infrastructure.
+- It is the **least operational overhead** solution because it's a **fully managed service**.
+
+---
+
+#### 🚫 Why the other options are incorrect:
+
+- **B.** ElastiCache is a caching layer and doesn’t solve **connection management** issues.
+- **C.** Upgrading the instance class only temporarily increases capacity and **doesn’t solve connection pooling issues** for serverless apps.
+- **D.** Multi-AZ provides **high availability**, but not **connection scaling** or **load management**. Also, apps don't typically switch between DBs manually.
+
+---
+
+### 🔗 References:
+- [Amazon RDS Proxy](https://docs.aws.amazon.com/rds/proxy/)
+- [Best practices for serverless apps with RDS](https://docs.aws.amazon.com/lambda/latest/dg/services-rds.html)
+
+</details>
+
