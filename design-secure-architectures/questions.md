@@ -571,6 +571,7 @@ A company has launched an Amazon RDS for MySQL DB instance. Most of the connecti
 ### 🔗 References:
 - [Amazon RDS Proxy](https://docs.aws.amazon.com/rds/proxy/)
 - [Best practices for serverless apps with RDS](https://docs.aws.amazon.com/lambda/latest/dg/services-rds.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102140-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
 
