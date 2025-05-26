@@ -526,7 +526,9 @@ A company needs to create an Amazon Elastic Kubernetes Service (Amazon EKS) clus
 
 </details>
 
-**Question:**  
+## Question #: 12
+
+**Question:**   
 A company has launched an Amazon RDS for MySQL DB instance. Most of the connections to the database come from serverless applications. Application traffic to the database changes significantly at random intervals. At times of high demand, users report that their applications experience database connection rejection errors.
 
 **Which solution will resolve this issue with the LEAST operational overhead?**
