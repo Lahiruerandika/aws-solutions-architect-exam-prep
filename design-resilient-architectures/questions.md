@@ -553,3 +553,35 @@ A company recently deployed a new auditing system to centralize information abou
 **D.** Run a custom script on the instance operating system to send data to the audit system. Configure the script to be invoked by the EC2 Auto Scaling group when the instance starts and is terminated.
 
 ---
+
+<details>  
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. Use EC2 Auto Scaling lifecycle hooks to run a custom script to send data to the audit system when instances are launched and terminated.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why B is Correct:
+- **Lifecycle hooks** allow Auto Scaling groups to **pause instance launching or termination**, so custom actions (like reporting to an audit system) can occur reliably.
+- Ensures that **both launch and termination events** are captured for auditing.
+- Requires **low operational overhead** as it integrates directly with Auto Scaling workflows.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** A scheduled Lambda would require continuous polling and manual management, making it less efficient and more error-prone.
+- **C.** User data executes only at launch, not at termination — and may not capture all state info.
+- **D.** The Auto Scaling group does not natively support calling scripts at both lifecycle stages without hooks, making this less robust.
+
+---
+
+### 🔗 References:
+- [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html)
+- [Best Practices for EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/best-practices.html)
+- [AWS Documentation on EC2 Auto Scaling Lifecycle](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-overview.html)
+
+</details>
