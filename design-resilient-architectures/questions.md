@@ -541,3 +541,15 @@ An ecommerce company is building a distributed application that involves several
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102139-exam-aws-certified-solutions-architect-associate-saa-c03/) 
 
 </details>
+
+**Question:**  
+A company recently deployed a new auditing system to centralize information about operating system versions, patching, and installed software for Amazon EC2 instances. A solutions architect must ensure all instances provisioned through EC2 Auto Scaling groups successfully send reports to the auditing system as soon as they are launched and terminated.
+
+**Which solution achieves these goals MOST efficiently?**
+
+**A.** Use a scheduled AWS Lambda function and run a script remotely on all EC2 instances to send data to the audit system.  
+**B.** Use EC2 Auto Scaling lifecycle hooks to run a custom script to send data to the audit system when instances are launched and terminated.  
+**C.** Use an EC2 Auto Scaling launch configuration to run a custom script through user data to send data to the audit system when instances are launched and terminated.  
+**D.** Run a custom script on the instance operating system to send data to the audit system. Configure the script to be invoked by the EC2 Auto Scaling group when the instance starts and is terminated.
+
+---
