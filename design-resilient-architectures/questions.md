@@ -542,7 +542,9 @@ An ecommerce company is building a distributed application that involves several
 
 </details>
 
-**Question:**  
+## Question #: 12
+
+**Question:** 
 A company recently deployed a new auditing system to centralize information about operating system versions, patching, and installed software for Amazon EC2 instances. A solutions architect must ensure all instances provisioned through EC2 Auto Scaling groups successfully send reports to the auditing system as soon as they are launched and terminated.
 
 **Which solution achieves these goals MOST efficiently?**
