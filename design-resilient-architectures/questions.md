@@ -585,6 +585,6 @@ A company recently deployed a new auditing system to centralize information abou
 - [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html)
 - [Best Practices for EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/best-practices.html)
 - [AWS Documentation on EC2 Auto Scaling Lifecycle](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-overview.html)
-
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/27844-exam-aws-certified-solutions-architect-associate-saa-c02/) 
 
 </details>
