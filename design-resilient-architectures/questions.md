@@ -589,6 +589,10 @@ A company recently deployed a new auditing system to centralize information abou
 
 </details>
 
+## Question #: 11
+
+**Question:** 
+
 A company is developing a real-time multiplayer game that uses UDP for communications between the client and servers in an Auto Scaling group. Spikes in demand are anticipated during the day, so the game server platform must adapt accordingly. Developers want to store gamer scores and other non-relational data in a database solution that will scale without intervention.
 
 **Which solution should a solutions architect recommend?**
