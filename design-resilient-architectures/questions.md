@@ -631,5 +631,7 @@ A company is developing a real-time multiplayer game that uses UDP for communica
 - [Amazon NLB and UDP Support](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html)
 - [Amazon DynamoDB On-Demand Mode](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html)
 - [Choosing the Right Load Balancer](https://aws.amazon.com/elasticloadbalancing/features/)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102143-exam-aws-certified-solutions-architect-associate-saa-c03/) 
+
 
 </details>
