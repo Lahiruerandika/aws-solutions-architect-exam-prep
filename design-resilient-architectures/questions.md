@@ -600,3 +600,36 @@ A company is developing a real-time multiplayer game that uses UDP for communica
 **B.** Use a Network Load Balancer for traffic distribution and Amazon DynamoDB on-demand for data storage.  
 **C.** Use a Network Load Balancer for traffic distribution and Amazon Aurora Global Database for data storage.  
 **D.** Use an Application Load Balancer for traffic distribution and Amazon DynamoDB global tables for data storage.
+
+---
+
+<details>  
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. Use a Network Load Balancer for traffic distribution and Amazon DynamoDB on-demand for data storage.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why B is Correct:
+- **Network Load Balancer (NLB)** is ideal for **UDP traffic**, which is required by the game server.
+- **Amazon DynamoDB on-demand** is a **non-relational, fully managed NoSQL database** that can **scale automatically** without manual intervention, and is perfect for unpredictable workloads like gamer scores.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Route 53 is a DNS service, not suitable for handling real-time UDP traffic. Also, **Aurora Serverless** is a **relational DB**, not optimized for storing highly variable, non-relational gamer score data.
+- **C.** Aurora Global Database is relational and not a good fit for the **non-relational workload**; also adds complexity and cost.
+- **D.** **Application Load Balancer (ALB)** supports only HTTP/HTTPS and **not UDP**, so it cannot be used for the game servers.
+
+---
+
+### 🔗 References:
+- [Amazon NLB and UDP Support](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html)
+- [Amazon DynamoDB On-Demand Mode](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html)
+- [Choosing the Right Load Balancer](https://aws.amazon.com/elasticloadbalancing/features/)
+
+</details>
