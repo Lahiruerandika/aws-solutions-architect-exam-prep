@@ -429,3 +429,36 @@ A company hosts a frontend application that uses an Amazon API Gateway API backe
 **B.** Configure provisioned concurrency for the Lambda function that handles the requests.  
 **C.** Cache the results of the queries in Amazon S3 for faster retrieval of similar datasets.  
 **D.** Increase the size of the database to increase the number of connections Lambda can establish at one time.
+
+---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. Configure provisioned concurrency for the Lambda function that handles the requests.**
+
+---
+
+### 📘 Explanation:
+
+#### ✅ Why B is Correct:
+- **Provisioned Concurrency** keeps Lambda function instances initialized and hyper-ready to respond to requests.
+- This removes the **cold start latency** that occurs when a function must load large libraries or initialize connections.
+- It’s the most effective way to reduce response time **without changing code** or architecture, which aligns with the requirement of minimal operational change.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Bypassing API Gateway and accessing RDS directly from the frontend breaks security best practices and adds complexity.  
+- **C.** Caching results in S3 requires additional logic and does not address latency from Lambda cold starts.  
+- **D.** Increasing DB size does not affect Lambda cold start latency, which is the main issue described.
+
+---
+
+### 🔗 References:
+- [AWS Lambda – Provisioned Concurrency](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html)
+- [Optimize AWS Lambda performance with Provisioned Concurrency](https://aws.amazon.com/blogs/compute/new-for-aws-lambda-predictable-start-up-latency-with-provisioned-concurrency/)
+
+</details>
