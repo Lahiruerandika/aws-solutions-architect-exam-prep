@@ -460,3 +460,7 @@ A company hosts a frontend application that uses an Amazon API Gateway API backe
 ### 🔗 References:
 - [AWS Lambda – Provisioned Concurrency](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html)
 - [Optimize AWS Lambda performance with Provisioned Concurrency](https://aws.amazon.com/blogs/compute/new-for-aws-lambda-predictable-start-up-latency-with-provisioned-concurrency/)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102144-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
+
+</details>
