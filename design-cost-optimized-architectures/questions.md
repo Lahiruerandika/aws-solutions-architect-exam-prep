@@ -1,5 +1,4 @@
 ## Question #01  
-### Topic #: 4 - Design Cost-Optimized Architectures
 
 A company hosts a web application on multiple Amazon EC2 instances. The EC2 instances are in an Auto Scaling group that scales in response to user demand. The company wants to optimize cost savings without making a long-term commitment.
 
@@ -27,7 +26,6 @@ A company hosts a web application on multiple Amazon EC2 instances. The EC2 inst
 </details>
 
 ## Question #02  
-### Topic #: 4 - Design Cost-Optimized Architectures
 
 **Question:** 
  A company has an application that is running on Amazon EC2 instances. A solutions architect has standardized the company on a particular instance family and various instance sizes based on the current needs of the company.
@@ -80,7 +78,6 @@ Let me know if you'd like this saved as a file or want to add a table of content
 </details>
 
 ## Question #: 03
-### Topic #: 4 - Design Cost-Optimized Architectures
 
 **Question:**  
 A company collects data from a large number of participants who use wearable devices. The company stores the data in an Amazon DynamoDB table and uses applications to analyze the data. The data workload is constant and predictable. The company wants to stay at or below its forecasted budget for DynamoDB.
@@ -127,7 +124,6 @@ Since the company’s workload is **constant and predictable**, the most **cost-
 </details>
 
 ## Question #: 04
-### Topic #: 1 - Design Cost-Optimized Architectures
 
 **Question:**  
 A company stores its data objects in Amazon S3 Standard storage. A solutions architect has found that 75% of the data is rarely accessed after 30 days. The company needs all the data to remain immediately accessible with the same high availability and resiliency, but the company wants to minimize storage costs.
@@ -170,8 +166,7 @@ A company stores its data objects in Amazon S3 Standard storage. A solutions arc
 
 </details>
 
-## Question #01  
-### Topic #: 4 - Design Cost-Optimized Architectures
+## Question #05
  
 A company has an application that collects data from IoT sensors on automobiles. The data is streamed and stored in Amazon S3 through Amazon Kinesis Data Firehose. The data produces trillions of S3 objects each year. Each morning, the company uses the data from the previous 30 days to retrain a suite of machine learning (ML) models.
 
