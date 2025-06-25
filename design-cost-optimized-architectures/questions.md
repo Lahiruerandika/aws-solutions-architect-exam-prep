@@ -237,3 +237,17 @@ A company is migrating its on-premises workload to the AWS Cloud. The company al
 ---
 
 ### 📘 Explanation:
+
+#### ✅ Why D is Correct:
+- **AWS Lambda** combined with **Amazon EventBridge (formerly CloudWatch Events)** allows for serverless automation with low maintenance.
+- It **minimizes cost** by shutting down resources when not needed.
+- No need to maintain a scheduler server (as in option C).
+- It is **scalable**, **automated**, and aligns with AWS best practices for serverless operations.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** EC2 and RDS do not support “scaling to zero.” You must **stop the instance** to avoid costs, not “scale.”
+- **B.** AWS Marketplace solutions may work but introduce **additional cost** and **complexity** for a task that can be done with native services.
+- **C.** Using a separate EC2 instance with cron introduces **unnecessary infrastructure and maintenance overhead**.
+
+---
