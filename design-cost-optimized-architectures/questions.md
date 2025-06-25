@@ -251,3 +251,10 @@ A company is migrating its on-premises workload to the AWS Cloud. The company al
 - **C.** Using a separate EC2 instance with cron introduces **unnecessary infrastructure and maintenance overhead**.
 
 ---
+
+### 🔗 References:
+- [Stop and Start EC2 Instances at Scheduled Times](https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-eventbridge/)
+- [RDS Stop and Start](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html)
+- [Amazon EventBridge Scheduling](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-scheduler.html)
+
+</details>
