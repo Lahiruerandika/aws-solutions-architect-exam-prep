@@ -256,5 +256,6 @@ A company is migrating its on-premises workload to the AWS Cloud. The company al
 - [Stop and Start EC2 Instances at Scheduled Times](https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-eventbridge/)
 - [RDS Stop and Start](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html)
 - [Amazon EventBridge Scheduling](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-scheduler.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102145-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
