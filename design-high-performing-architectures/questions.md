@@ -505,3 +505,16 @@ The reporting process takes a few hours with the use of relational queries. The 
 - **D.** DynamoDB is a **NoSQL database**, which is not suitable for relational query processing without **major changes** to the schema and application logic.
 
 ---
+
+### 🧠 Topic:
+**Domain:** Design High-Performing Architectures  
+**Sub-topic:** Select high-performing and scalable data solutions
+
+---
+
+### 🔗 References:
+- [Amazon Aurora Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replica.html)  
+- [Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-postgresql.html)  
+- [RDS Multi-AZ vs Read Replica](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
+
+</details>
