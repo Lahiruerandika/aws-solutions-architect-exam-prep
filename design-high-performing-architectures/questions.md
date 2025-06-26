@@ -492,3 +492,16 @@ The reporting process takes a few hours with the use of relational queries. The 
 ---
 
 ### 📘 Explanation:
+
+#### ✅ Why B is Correct:
+- Amazon **Aurora PostgreSQL** supports **read replicas**, which can be used to **offload read-heavy operations** such as reporting.
+- Aurora Replicas are **synchronously replicated**, providing **low-latency** and **up-to-date** data access without interfering with the primary instance.
+- This approach requires **minimal changes to application code**, typically only updating the reporting tool to point to the replica endpoint.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Amazon DocumentDB is **not compatible with PostgreSQL** and would require a **complete data migration and application rewrite**.
+- **C.** RDS Multi-AZ is for **high availability**, **not for read scaling**. The standby instance **cannot be used for reads**.
+- **D.** DynamoDB is a **NoSQL database**, which is not suitable for relational query processing without **major changes** to the schema and application logic.
+
+---
