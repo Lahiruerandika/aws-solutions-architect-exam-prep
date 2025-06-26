@@ -516,5 +516,6 @@ The reporting process takes a few hours with the use of relational queries. The 
 - [Amazon Aurora Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replica.html)  
 - [Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-postgresql.html)  
 - [RDS Multi-AZ vs Read Replica](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102147-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
