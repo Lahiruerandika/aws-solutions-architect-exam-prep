@@ -465,7 +465,7 @@ A company hosts a frontend application that uses an Amazon API Gateway API backe
 
 </details>
 
-## Question #: XX
+## Question #: 11
 
 **Question:**  
 A company hosts a three-tier web application that includes a PostgreSQL database. The database stores the metadata from documents. The company searches the metadata for key terms to retrieve documents that the company reviews in a report each month. The documents are stored in Amazon S3. The documents are usually written only once, but they are updated frequently.
