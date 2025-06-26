@@ -480,3 +480,15 @@ The reporting process takes a few hours with the use of relational queries. The 
 **D.** Set up a new Amazon DynamoDB table to store the documents. Use a fixed write capacity to support new document entries. Automatically scale the read capacity to support the reports.
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. Set up a new Amazon Aurora PostgreSQL DB cluster that includes an Aurora Replica. Issue queries to the Aurora Replica to generate the reports.**
+
+---
+
+### 📘 Explanation:
