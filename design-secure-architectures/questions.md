@@ -598,3 +598,18 @@ A company has a three-tier application on AWS that ingests sensor data from its 
 **A. Configure a TLS listener. Deploy the server certificate on the NLB.**
 
 ---
+
+### 📘 Explanation:
+
+#### ✅ Why A is Correct:
+- To protect **data in transit**, encryption using **TLS (Transport Layer Security)** is essential.
+- A **Network Load Balancer** (NLB) supports **TLS listeners**, allowing TLS termination at the load balancer layer.
+- You can associate an **SSL/TLS certificate** with the listener, ensuring encrypted traffic between users and the load balancer.
+
+#### 🚫 Why the other options are incorrect:
+
+- **B.** AWS Shield Advanced and AWS WAF protect against **DDoS and web-layer attacks**, but they do **not handle encryption** of data in transit.
+- **C.** While an **ALB** supports TLS and WAF, switching to it isn't necessary. An **NLB already supports TLS**, and ALB is typically used for HTTP/HTTPS traffic (Layer 7), which may not apply here.
+- **D.** EBS volume encryption protects **data at rest**, not data in transit.
+
+---
