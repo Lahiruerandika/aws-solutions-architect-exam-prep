@@ -613,3 +613,9 @@ A company has a three-tier application on AWS that ingests sensor data from its 
 - **D.** EBS volume encryption protects **data at rest**, not data in transit.
 
 ---
+
+### 🔗 References:
+- [TLS Listeners for Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-tls-listener.html)  
+- [Data Protection Best Practices](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-and-compliance.html#data-in-transit)
+
+</details>
