@@ -617,5 +617,6 @@ A company has a three-tier application on AWS that ingests sensor data from its 
 ### 🔗 References:
 - [TLS Listeners for Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-tls-listener.html)  
 - [Data Protection Best Practices](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-and-compliance.html#data-in-transit)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/46507-exam-aws-certified-solutions-architect-associate-saa-c02/)
 
 </details>
