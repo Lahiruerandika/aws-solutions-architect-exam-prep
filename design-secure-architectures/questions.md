@@ -588,3 +588,13 @@ A company has a three-tier application on AWS that ingests sensor data from its 
 **D.** Encrypt the Amazon Elastic Block Store (Amazon EBS) volume on the EC2 instances by using AWS Key Management Service (AWS KMS).
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. Configure a TLS listener. Deploy the server certificate on the NLB.**
+
+---
