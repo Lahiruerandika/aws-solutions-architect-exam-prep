@@ -259,3 +259,17 @@ A company is migrating its on-premises workload to the AWS Cloud. The company al
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102145-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
+
+## Question #07
+
+**Question:**  
+A company is planning to migrate a commercial off-the-shelf application from its on-premises data center to AWS. The software has a software licensing model using sockets and cores with predictable capacity and uptime requirements. The company wants to use its existing licenses, which were purchased earlier this year.
+
+**Which Amazon EC2 pricing option is the MOST cost-effective?**
+
+**A.** Dedicated Reserved Hosts  
+**B.** Dedicated On-Demand Hosts  
+**C.** Dedicated Reserved Instances  
+**D.** Dedicated On-Demand Instances  
+
+---
