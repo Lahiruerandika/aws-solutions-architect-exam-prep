@@ -273,3 +273,13 @@ A company is planning to migrate a commercial off-the-shelf application from its
 **D.** Dedicated On-Demand Instances  
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. Dedicated Reserved Hosts**
+
+---
