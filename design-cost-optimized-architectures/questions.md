@@ -298,3 +298,12 @@ A company is planning to migrate a commercial off-the-shelf application from its
 - **D.** Dedicated On-Demand Instances also do not provide the cost savings needed for long-term, predictable workloads and may not support socket/core licensing.
 
 ---
+
+### 🔗 References:
+- [AWS EC2 Dedicated Hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html)  
+- [Bring Your Own License (BYOL) to AWS](https://aws.amazon.com/license-manager/)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102150-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
+</details>
+
+---
