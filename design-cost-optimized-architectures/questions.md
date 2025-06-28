@@ -283,3 +283,18 @@ A company is planning to migrate a commercial off-the-shelf application from its
 **A. Dedicated Reserved Hosts**
 
 ---
+
+### 📘 Explanation:
+
+#### ✅ Why A is Correct:
+- **Dedicated Hosts** allow you to bring your own licenses (BYOL) for software that is bound to physical sockets, cores, or VMs.
+- **Reserved** pricing on Dedicated Hosts provides significant cost savings over time when workloads are predictable and always-on.
+- Since the application has **predictable capacity and uptime**, **Dedicated Reserved Hosts** are **the most cost-effective** option that complies with licensing restrictions.
+
+#### 🚫 Why the other options are incorrect:
+
+- **B.** Dedicated On-Demand Hosts offer the same licensing benefits but are **not cost-effective** for predictable, long-term workloads due to higher pricing.
+- **C.** Reserved Instances are not tied to physical hosts and do not allow BYOL based on **socket/core licensing**, so they do **not satisfy licensing terms**.
+- **D.** Dedicated On-Demand Instances also do not provide the cost savings needed for long-term, predictable workloads and may not support socket/core licensing.
+
+---
