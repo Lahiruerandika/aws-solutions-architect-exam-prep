@@ -331,3 +331,19 @@ A company runs an application on Amazon EC2 Linux instances across multiple Avai
 **C. Use the Amazon Elastic File System (Amazon EFS) Standard storage class. Create a lifecycle management policy to move infrequently accessed data to EFS Standard-Infrequent Access (EFS Standard-IA).**
 
 ---
+
+### 📘 Explanation:
+
+#### ✅ Why C is Correct:
+- Amazon **EFS** provides a **highly available, durable, POSIX-compliant shared file system** accessible across multiple EC2 instances and Availability Zones.
+- **EFS Standard** is the default storage class optimized for frequent access.
+- **EFS Standard-IA** provides cost savings for infrequently accessed data.
+- Lifecycle policies in EFS automatically transition files to IA after a period of inactivity (e.g., 30 days).
+- This makes it **cost-effective**, **durable**, and **highly available** while meeting POSIX requirements.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A & B.** Amazon S3 is not POSIX-compliant and does not support shared file system semantics needed by applications using local file system calls.
+- **D.** EFS One Zone is less expensive but is not **highly available across AZs** — which violates the requirement for multi-AZ high availability.
+
+---
