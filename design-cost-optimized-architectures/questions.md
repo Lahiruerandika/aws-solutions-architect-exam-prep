@@ -352,5 +352,6 @@ A company runs an application on Amazon EC2 Linux instances across multiple Avai
 - [Amazon EFS Overview](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)  
 - [EFS Lifecycle Management](https://docs.aws.amazon.com/efs/latest/ug/lifecycle-management.html)  
 - [EFS Storage Classes](https://aws.amazon.com/efs/features/)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102152-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
