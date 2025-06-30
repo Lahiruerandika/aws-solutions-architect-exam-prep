@@ -347,3 +347,10 @@ A company runs an application on Amazon EC2 Linux instances across multiple Avai
 - **D.** EFS One Zone is less expensive but is not **highly available across AZs** — which violates the requirement for multi-AZ high availability.
 
 ---
+
+### 🔗 References:
+- [Amazon EFS Overview](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)  
+- [EFS Lifecycle Management](https://docs.aws.amazon.com/efs/latest/ug/lifecycle-management.html)  
+- [EFS Storage Classes](https://aws.amazon.com/efs/features/)
+
+</details>
