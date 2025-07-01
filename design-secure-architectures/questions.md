@@ -645,3 +645,18 @@ A solutions architect is creating a new VPC design. There are two public subnets
 **C. Create a security group for the web servers and allow port 443 from the load balancer. Create a security group for the MySQL servers and allow port 3306 from the web servers security group.**
 
 ---
+
+### 📘 Explanation:
+
+#### ✅ Why C is Correct:
+- **Security Groups** are stateful and designed for least privilege access.
+- The **web servers should only allow port 443 from the load balancer’s security group**, not from all IPs.
+- The **MySQL servers should only allow port 3306 from the web server’s security group**, which enforces the principle of least privilege.
+- This ensures **only specific, expected traffic paths are allowed**, minimizing exposure.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Opening port 443 on the web servers to 0.0.0.0/0 is too permissive and violates least privilege.
+- **B & D.** Network ACLs are stateless and not ideal for complex, fine-grained security policies like limiting access by security group.
+
+---
