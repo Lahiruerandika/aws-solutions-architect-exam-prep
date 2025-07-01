@@ -664,5 +664,6 @@ A solutions architect is creating a new VPC design. There are two public subnets
 ### 🔗 References:
 - [Security Groups vs Network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html)
 - [Security Group Best Practices](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/43796-exam-aws-certified-solutions-architect-associate-saa-c02/)
 
 </details>
