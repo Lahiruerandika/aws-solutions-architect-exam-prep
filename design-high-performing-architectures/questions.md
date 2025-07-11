@@ -537,3 +537,10 @@ An ecommerce company is running a multi-tier application on AWS. The front-end a
 **B. Implement Amazon ElastiCache to cache the large datasets.**
 
 ---
+
+### 📘 Explanation:
+
+#### ✅ Why B is Correct:
+- **Amazon ElastiCache** (Redis or Memcached) is a highly efficient in-memory data store that can cache frequent and repetitive read-heavy queries.
+- Caching improves **latency and application performance** by reducing the load on the database.
+- This approach is ideal for situations where **identical datasets are repeatedly requested**, as described.
