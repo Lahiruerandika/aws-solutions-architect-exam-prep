@@ -544,3 +544,11 @@ An ecommerce company is running a multi-tier application on AWS. The front-end a
 - **Amazon ElastiCache** (Redis or Memcached) is a highly efficient in-memory data store that can cache frequent and repetitive read-heavy queries.
 - Caching improves **latency and application performance** by reducing the load on the database.
 - This approach is ideal for situations where **identical datasets are repeatedly requested**, as described.
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Amazon SNS is a messaging service, not a caching mechanism. It cannot be used to cache or store datasets.
+- **C.** Read replicas help with read scalability but **do not cache results**. Each query still hits the database engine.
+- **D.** Amazon Kinesis Data Firehose is used for **data streaming and delivery**, not for database querying or caching.
+
+---
