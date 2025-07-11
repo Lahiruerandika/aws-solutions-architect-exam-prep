@@ -506,12 +506,6 @@ The reporting process takes a few hours with the use of relational queries. The 
 
 ---
 
-### 🧠 Topic:
-**Domain:** Design High-Performing Architectures  
-**Sub-topic:** Select high-performing and scalable data solutions
-
----
-
 ### 🔗 References:
 - [Amazon Aurora Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replica.html)  
 - [Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-postgresql.html)  
@@ -519,3 +513,17 @@ The reporting process takes a few hours with the use of relational queries. The 
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102147-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
+
+## Question #: 12
+
+**Question:**  
+An ecommerce company is running a multi-tier application on AWS. The front-end and backend tiers both run on Amazon EC2, and the database runs on Amazon RDS for MySQL. The backend tier communicates with the RDS instance. There are frequent calls to return identical datasets from the database that are causing performance slowdowns.
+
+**Which action should be taken to improve the performance of the backend?**
+
+**A.** Implement Amazon SNS to store the database calls.  
+**B.** Implement Amazon ElastiCache to cache the large datasets.  
+**C.** Implement an RDS for MySQL read replica to cache database calls.  
+**D.** Implement Amazon Kinesis Data Firehose to stream the calls to the database.
+
+---
