@@ -552,3 +552,10 @@ An ecommerce company is running a multi-tier application on AWS. The front-end a
 - **D.** Amazon Kinesis Data Firehose is used for **data streaming and delivery**, not for database querying or caching.
 
 ---
+
+### 🔗 References:
+- [Amazon ElastiCache Overview](https://docs.aws.amazon.com/elasticache/latest/mem-ug/WhatIs.html)
+- [Best Practices for Caching with ElastiCache](https://aws.amazon.com/caching/)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102154-exam-aws-certified-solutions-architect-associate-saa-c03/)
+
+</details>
