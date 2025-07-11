@@ -527,3 +527,13 @@ An ecommerce company is running a multi-tier application on AWS. The front-end a
 **D.** Implement Amazon Kinesis Data Firehose to stream the calls to the database.
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**B. Implement Amazon ElastiCache to cache the large datasets.**
+
+---
