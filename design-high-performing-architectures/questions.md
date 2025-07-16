@@ -558,3 +558,4 @@ An ecommerce company is running a multi-tier application on AWS. The front-end a
 - [Best Practices for Caching with ElastiCache](https://aws.amazon.com/caching/)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102154-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
+</details>
