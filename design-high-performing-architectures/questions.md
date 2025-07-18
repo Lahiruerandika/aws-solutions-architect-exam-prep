@@ -553,3 +553,5 @@ An ecommerce company is running a multi-tier application on AWS. The front-end a
 
 ---
 
+### 🔗 References:
+- [Amazon ElastiCache Overview](https://docs.aws.amazon.com/elasticache/latest/mem-ug/WhatIs.html)
