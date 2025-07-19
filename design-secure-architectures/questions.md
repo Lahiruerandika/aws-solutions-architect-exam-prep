@@ -682,3 +682,8 @@ A new employee has joined a company as a deployment engineer. The deployment eng
 **E.** Create an IAM role for the deployment engineer to explicitly define the permissions specific to the AWS CloudFormation stack and launch stacks using that IAM role.
 
 ---
+
+<details>
+<summary><strong>✅ Check Answers</strong></summary>
+
+---
