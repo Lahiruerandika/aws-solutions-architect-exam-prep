@@ -705,3 +705,17 @@ A new employee has joined a company as a deployment engineer. The deployment eng
 - This further enforces least privilege, especially when sensitive resource creation is involved.
 
 ---
+
+#### 🚫 Why the other options are incorrect:
+
+- **A.** Root user credentials should **never be used for daily tasks**. They are only for account setup and emergency purposes.
+- **B.** PowerUsers have broad permissions and can perform almost all tasks **except IAM and billing**, which is **more access than required**.
+- **C.** AdministratorAccess grants **full permissions**, violating the principle of least privilege.
+
+---
+
+### 🔗 References:
+- [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [AWS CloudFormation Access Control](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html)
+
+</details>
