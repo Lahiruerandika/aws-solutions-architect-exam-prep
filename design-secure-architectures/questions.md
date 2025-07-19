@@ -693,3 +693,15 @@ A new employee has joined a company as a deployment engineer. The deployment eng
 **E.** Create an IAM role for the deployment engineer to explicitly define the permissions specific to the AWS CloudFormation stack and launch stacks using that IAM role.
 
 ---
+
+### 📘 Explanation:
+
+#### ✅ Why D is Correct:
+- Creating a **dedicated IAM user** and granting **only CloudFormation permissions** aligns with the **principle of least privilege**.
+- This ensures the user can perform their job without access to unnecessary services.
+
+#### ✅ Why E is Correct:
+- Using an **IAM role** scoped to specific stack operations provides fine-grained control over **what resources and actions** the deployment engineer can access when launching stacks.
+- This further enforces least privilege, especially when sensitive resource creation is involved.
+
+---
