@@ -687,3 +687,9 @@ A new employee has joined a company as a deployment engineer. The deployment eng
 <summary><strong>✅ Check Answers</strong></summary>
 
 ---
+
+### ✅ Correct Answers:
+**D.** Create a new IAM user for the deployment engineer and add the IAM user to a group that has an IAM policy that allows AWS CloudFormation actions only.  
+**E.** Create an IAM role for the deployment engineer to explicitly define the permissions specific to the AWS CloudFormation stack and launch stacks using that IAM role.
+
+---
