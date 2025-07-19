@@ -717,5 +717,5 @@ A new employee has joined a company as a deployment engineer. The deployment eng
 ### 🔗 References:
 - [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 - [AWS CloudFormation Access Control](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html)
-
+(https://www.examtopics.com/discussions/amazon/view/102155-exam-aws-certified-solutions-architect-associate-saa-c03/)
 </details>
