@@ -559,3 +559,17 @@ An ecommerce company is running a multi-tier application on AWS. The front-end a
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102154-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
+
+## Question #: 13
+
+**Question:**  
+A company has a large dataset for its online advertising business stored in an Amazon RDS for MySQL DB instance in a single Availability Zone. The company wants business reporting queries to run without impacting the write operations to the production DB instance.
+
+**Which solution meets these requirements?**
+
+**A.** Deploy RDS read replicas to process the business reporting queries.  
+**B.** Scale out the DB instance horizontally by placing it behind an Elastic Load Balancer.  
+**C.** Scale up the DB instance to a larger instance type to handle write operations and queries.  
+**D.** Deploy the DB instance in multiple Availability Zones to process the business reporting queries.
+
+---
