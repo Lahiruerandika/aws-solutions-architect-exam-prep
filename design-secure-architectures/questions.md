@@ -744,3 +744,16 @@ The web application is not working as intended. The web application reports that
 **D. Add an inbound rule to the security group of the database tier’s RDS instance to allow traffic from the web tier’s security group.**
 
 ---
+
+### 📘 Explanation:
+
+- By default, security groups are stateful and deny all inbound traffic unless explicitly allowed.
+- The default security group allows all outbound traffic, so the web tier can send requests.
+- However, the RDS instance’s security group will block inbound traffic if there is no rule allowing traffic from the web tier.
+- Adding an inbound rule to the database security group to allow traffic on the MySQL port (usually TCP 3306) from the web tier’s security group allows the web tier to connect successfully.
+- Network ACLs and route tables in default state already allow communication within the VPC, so no changes needed there.
+- Option A is unnecessary because default NACLs allow all traffic.
+- Option B is incorrect because routing between subnets in the same VPC is handled automatically.
+- Option C adds unnecessary complexity.
+
+---
