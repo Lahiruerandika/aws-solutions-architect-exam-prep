@@ -583,3 +583,22 @@ A company has a large dataset for its online advertising business stored in an A
 **A. Deploy RDS read replicas to process the business reporting queries.**
 
 ---
+
+### 📘 Explanation:
+
+- Amazon RDS **read replicas** allow you to offload **read-heavy workloads** (like business reporting queries) from the primary database, which handles **write operations**.
+- This improves performance and minimizes the impact of long-running queries on transactional workloads.
+- Read replicas are **asynchronous** and designed specifically to support this use case.
+
+**Why the other options are incorrect:**
+
+- **B.** RDS does not support horizontal scaling through an Elastic Load Balancer like EC2. RDS cannot be placed behind an ELB.
+- **C.** Scaling vertically (upgrading instance type) might help, but it doesn't separate read and write workloads and can still lead to contention.
+- **D.** Multi-AZ deployments improve **availability and failover**, not performance. The standby replica cannot be queried.
+
+---
+
+### 🔗 Reference:
+- [Amazon RDS Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102157-exam-aws-certified-solutions-architect-associate-saa-c03/)
+</details>
