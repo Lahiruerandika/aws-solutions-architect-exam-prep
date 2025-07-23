@@ -719,3 +719,5 @@ A new employee has joined a company as a deployment engineer. The deployment eng
 - [AWS CloudFormation Access Control](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html)
 - [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102155-exam-aws-certified-solutions-architect-associate-saa-c03/)
 </details>
+
+## Question #: 16
