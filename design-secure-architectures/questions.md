@@ -757,3 +757,9 @@ The web application is not working as intended. The web application reports that
 - Option C adds unnecessary complexity.
 
 ---
+
+### 🔗 References:
+- [Security Groups for Your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)  
+- [Amazon RDS Security Groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html)
+
+</details>
