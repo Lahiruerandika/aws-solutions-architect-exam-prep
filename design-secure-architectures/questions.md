@@ -734,3 +734,13 @@ The web application is not working as intended. The web application reports that
 **D.** Add an inbound rule to the security group of the database tier’s RDS instance to allow traffic from the web tier’s security group.
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**D. Add an inbound rule to the security group of the database tier’s RDS instance to allow traffic from the web tier’s security group.**
+
+---
