@@ -761,5 +761,6 @@ The web application is not working as intended. The web application reports that
 ### 🔗 References:
 - [Security Groups for Your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)  
 - [Amazon RDS Security Groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html)
+- [ExamTopics Discussion](https://www.examtopics.com/discussions/amazon/view/102156-exam-aws-certified-solutions-architect-associate-saa-c03/)
 
 </details>
