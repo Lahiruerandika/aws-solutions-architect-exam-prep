@@ -573,3 +573,13 @@ A company has a large dataset for its online advertising business stored in an A
 **D.** Deploy the DB instance in multiple Availability Zones to process the business reporting queries.
 
 ---
+
+<details>
+<summary><strong>✅ Check Answer</strong></summary>
+
+---
+
+### ✅ Correct Answer:  
+**A. Deploy RDS read replicas to process the business reporting queries.**
+
+---
